@@ -11,12 +11,13 @@
 //     })
 // }
 
+  // Programs slider
 
-const swiper = new Swiper('.swiper', {
+const swiperPrograms = new Swiper('.programs-slider', {
   // Optional parameters
   slidesPerView: 4,
   spaceBetween: 20,
-  loop: true,
+  // loop: true,
 
   // If we need pagination
   pagination: {
@@ -26,24 +27,90 @@ const swiper = new Swiper('.swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: 'program-slider-prev',
-    prevEl: 'program-slider-next',
+    nextEl: '.program-slider-next',
+    prevEl: '.program-slider-prev',
   },
 
   breakpoints: {
-    289: {
+    350: {
+      slidesPerView: 2,
+    },
+    580: {
+      slidesPerView: 3,
+    },
+    900: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+  // Persons slider
+const swiperPersons = new Swiper('.persons-slider', {
+  // Optional parameters
+  slidesPerView: 4,
+  spaceBetween: 20,
+  // loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.program-slider-next',
+    prevEl: '.program-slider-prev',
+  },
+
+  breakpoints: {
+    350: {
       slidesPerView: 1,
     },
     480: {
       slidesPerView: 2,
     },
-    880: {
+    580: {
       slidesPerView: 3,
     },
-    1200: {
+    900: {
       slidesPerView: 4,
-    }
+    },
   },
 });
 
+// News slider
 
+const swiperNews = new Swiper('.news-slider', {
+  // Optional parameters
+  slidesPerView: 4,
+  spaceBetween: 20,
+  // loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.program-slider-next',
+    prevEl: '.program-slider-prev',
+  },
+
+  breakpoints: {
+    350: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    580: {
+      slidesPerView: 3,
+    },
+    900: {
+      slidesPerView: 4,
+    },
+  },
+});
