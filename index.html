@@ -9,28 +9,34 @@
 		<title>Page</title>
 	</head>
 	<body>
-		<header class="header none">
+		<header class="header">
 			<div class="container"> 
 				<div class="header-content"> 
 					<div class="header__logo"><a class="logo-img"><img src="./img/logo.webp" alt="logo"></a><a class="logo-text">АНО Центр защиты бизнеса</a></div>
 					<div class="header-info"> 
 						<div class="social-icons"><a class="social-icons__item" href="#!"><img src="./img/socials/bluetelegram.svg" alt="telegram"></a><a class="social-icons__item" href="#!"><img src="./img/socials/bluewhatsapp.svg" alt="whatsapp"></a></div><a class="contact-phone" href="tel:89994442211">+7 (999) 444 22 11</a>
-						<button class="menu-burger"><img src="./img/icons/menu-burger-gradient.svg" alt="menu"></button>
+						<button class="menu-toggle" id="menu-toggle"><span></span></button>
 					</div>
 					<div class="mob-info">
 						<div class="social-icons-mob"><a class="social-icons-mob__item" href="#!"><img src="./img/socials/phone.svg" alt="phone"></a><a class="social-icons-mob__item icon-divider" href="#!"><img src="./img/socials/bluewhatsapp.svg" alt="whatsapp"></a><a class="social-icons-mob__item" href="#!"><img src="./img/socials/bluetelegram.svg" alt="telegram"></a></div>
-						<button class="menu-burger"> <img src="./img/icons/menu-burger.svg" alt="menu"></button>
+						<button class="menu-toggle" id="menu-toggle"><span></span></button>
 					</div>
-					<ul class="nav__list">
-						<li><a href="#!">Главная</a></li>
-						<li><a href="#!">О нас</a></li>
-						<li><a href="#!">Образовательные программы</a></li>
-						<li><a href="#!">Сервисы</a></li>
-						<li><a href="#!">Статьи</a></li>
-						<li><a href="#!">Команда</a></li>
-						<li><a href="#!">Кейсы</a></li>
-						<li><a href="#!">Новости</a></li>
-					</ul>
+					<div class="aside-menu">
+						<div class="aside-menu-top">
+							<div class="aside-menu__logo"> <a class="menu-logo-img" href="#!"><img src="./img/logo.webp" alt="logo"></a><a class="menu-logo-text" href="#!">АНО Центр защиты бизнеса  </a></div>
+							<div class="aside-menu__social"><a class="aside-menu__social-item" href="#!"><img src="./img/socials/whatsapp.svg"><span>WhatsApp</span></a><a class="aside-menu__social-item" href="#!"><img src="./img/socials/tg.svg"><span>Telegram</span></a></div><a class="aside-menu-tel" href="tel:89998889090">+7 999 888 90 09   </a>
+						</div>
+						<ul class="nav__list">
+							<li><a href="#!">Главная</a></li>
+							<li><a href="#!">О нас</a></li>
+							<li><a href="#!">Образовательные программы</a></li>
+							<li><a href="#!">Сервисы</a></li>
+							<li><a href="#!">Статьи</a></li>
+							<li><a href="#!">Команда</a></li>
+							<li><a href="#!">Кейсы</a></li>
+							<li><a href="#!">Новости</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -46,7 +52,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="programs">
+		<section class="programs none">
 			<div class="container"> 
 				<div class="title-group">
 					<p class="back-title">Чему мы обучаем</p>
@@ -154,7 +160,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="services">
+		<section class="services none">
 			<div class="container"> 
 				<div class="title-group">
 					<p class="back-title">Наша компетенция</p>
@@ -217,34 +223,24 @@
 								<p class="person-card__position">Руководитель практики решение вопросов</p>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="person-card">
-								<div class="person-card__img"> </div>
-								<div class="person-card__label">Работа в ИТ</div>
-								<h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
-								<p class="person-card__position">Руководитель практики решение вопросов</p>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="person-card">
-								<div class="person-card__img"> </div>
-								<div class="person-card__label">Работа в ИТ</div>
-								<h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
-								<p class="person-card__position">Руководитель практики решение вопросов</p>
-							</div>
-						</div>
 					</div>
-					<div class="program-slider-group">
-						<div class="pagination__divider"></div>
-						<div class="program-slider-controls">
-							<button class="program-slider-prev"><img src="./img/icons/prev.svg" alt="Back"></button>
-							<div class="swiper-pagination"></div>
-							<button class="program-slider-next"><img src="./img/icons/next.svg" alt="Next"></button>
-						</div>
-					</div>
+					<div class="swiper-pagination"></div>
 				</div><a class="btn-icon-mob" href="#!">Все члены совета<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff"/>
 </svg></a>
+				<div class="pagination-wrapper"> 
+					<div class="pagination__divider"> </div>
+					<div class="pagination"> <a class="pagination__link pagination-prev" href="#!">
+							<svg class="svg-prev">
+								<use href="./img/spriteSvg.svg#svg-prev"></use>
+							</svg></a>
+						<div class="pagination__link-active">1</div><a class="pagination__link" href="#!">2</a>
+						<div class="pagination__ellipsis">... </div><a class="pagination__link" href="#!">8</a><a class="pagination__link pagination-next" href="#!">
+							<svg class="svg-next">
+								<use href="./img/spriteSvg.svg#svg-next"></use>
+							</svg></a>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="cases none">
@@ -336,77 +332,75 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff"/>
 </svg></a>
 				</div>
-				<ul class="list-group list-group-horizontal-xl mb-3">
+				<ul class="list-group">
 					<li class="list-group-item" data-tab="tab-1">Лента</li>
 					<li class="list-group-item" data-tab="tab-2">Новости</li>
 					<li class="list-group-item" data-tab="tab-3">СМИ</li>
 					<li class="list-group-item" data-tab="tab-4">Мероприятия</li>
 					<li class="list-group-item" data-tab="tab-5">Видео</li>
 				</ul>
-				<div class="card p-3 hidden" data-tab-content id="tab-1">
-					<h1>таб1</h1>
-				</div>
-				<div class="card p-3 hidden" data-tab-content id="tab-2">
-					<h1>таб2</h1>
-				</div>
-				<div class="card p-3 hidden" data-tab-content id="tab-3">
-					<h1>таб3</h1>
-				</div>
-				<div class="card p-3 hidden" data-tab-content id="tab-4">
-					<h1>таб4</h1>
-				</div>
-				<div class="card p-3 hidden" data-tab-content id="tab-5">
-					<h1>таб5</h1>
-				</div>
-				<div class="swiper news-slider">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="news-card">
-								<div class="news-card__img"> </div>
-								<h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
-								<p class="news-card__info">28.09.2023 /<span> Обучение /</span><span> Обучение</span></p>
+				<div class="card" data-tab-content id="tab-1">
+					<div class="swiper news-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="news-card">
+									<div class="news-card__img"> </div>
+									<h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
+									<p class="news-card__info">28.09.2023 /<span> Обучение /</span><span> Обучение</span></p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="news-card">
+									<div class="news-card__img"> </div>
+									<h4 class="news-card__title">Lorem Ipsum has been</h4>
+									<p class="news-card__info">28.09.2023 /<span> Обучение /</span><span> Обучение</span></p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="news-card">
+									<div class="news-card__img"> </div>
+									<h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
+									<p class="news-card__info">28.09.2023 /<span> Обучение /</span><span> Обучение</span></p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="news-card">
+									<div class="news-card__img"> </div>
+									<h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
+									<p class="news-card__info">28.09.2023 /<span> Обучение /</span><span> Обучение</span></p>
+								</div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="news-card">
-								<div class="news-card__img"> </div>
-								<h4 class="news-card__title">Lorem Ipsum has been</h4>
-								<p class="news-card__info">28.09.2023 /<span> Обучение /</span><span> Обучение</span></p>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="news-card">
-								<div class="news-card__img"> </div>
-								<h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
-								<p class="news-card__info">28.09.2023 /<span> Обучение /</span><span> Обучение</span></p>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="news-card">
-								<div class="news-card__img"> </div>
-								<h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
-								<p class="news-card__info">28.09.2023 /<span> Обучение /</span><span> Обучение</span></p>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="news-card">
-								<div class="news-card__img"> </div>
-								<h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
-								<p class="news-card__info">28.09.2023 /<span> Обучение /</span><span> Обучение</span></p>
-							</div>
-						</div>
-					</div>
-					<div class="program-slider-group">
-						<div class="pagination__divider"></div>
-						<div class="program-slider-controls">
-							<button class="program-slider-prev"><img src="./img/icons/prev.svg" alt="Back"></button>
-							<div class="swiper-pagination"></div>
-							<button class="program-slider-next"><img src="./img/icons/next.svg" alt="Next"></button>
-						</div>
-					</div>
-				</div><a class="btn-icon-mob" href="#!">Все новости<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<div class="swiper-pagination"></div>
+					</div><a class="btn-icon-mob" href="#!">Все новости<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff"/>
 </svg></a>
+					<div class="pagination-wrapper"> 
+						<div class="pagination__divider"> </div>
+						<div class="pagination"> <a class="pagination__link pagination-prev" href="#!">
+								<svg class="svg-prev">
+									<use href="./img/spriteSvg.svg#svg-prev"></use>
+								</svg></a>
+							<div class="pagination__link-active">1</div><a class="pagination__link" href="#!">2</a>
+							<div class="pagination__ellipsis">... </div><a class="pagination__link" href="#!">8</a><a class="pagination__link pagination-next" href="#!">
+								<svg class="svg-next">
+									<use href="./img/spriteSvg.svg#svg-next"></use>
+								</svg></a>
+						</div>
+					</div>
+				</div>
+				<div class="card hidden" data-tab-content id="tab-2">
+					<h1>таб2</h1>
+				</div>
+				<div class="card hidden" data-tab-content id="tab-3">
+					<h1>таб3</h1>
+				</div>
+				<div class="card hidden" data-tab-content id="tab-4">
+					<h1>таб4</h1>
+				</div>
+				<div class="card hidden" data-tab-content id="tab-5">
+					<h1>таб5</h1>
+				</div>
 			</div>
 		</section>
 		<section class="team none">
@@ -451,34 +445,24 @@
 								<p class="person-card__position">Руководитель практики решение вопросов</p>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="person-card">
-								<div class="person-card__img"> </div>
-								<div class="person-card__label">Работа в ИТ</div>
-								<h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
-								<p class="person-card__position">Руководитель практики решение вопросов</p>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="person-card">
-								<div class="person-card__img"> </div>
-								<div class="person-card__label">Работа в ИТ</div>
-								<h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
-								<p class="person-card__position">Руководитель практики решение вопросов</p>
-							</div>
-						</div>
 					</div>
-					<div class="program-slider-group">
-						<div class="pagination__divider"></div>
-						<div class="program-slider-controls">
-							<button class="program-slider-prev"><img src="./img/icons/prev.svg" alt="Back"></button>
-							<div class="swiper-pagination"></div>
-							<button class="program-slider-next"><img src="./img/icons/next.svg" alt="Next"></button>
-						</div>
-					</div>
+					<div class="swiper-pagination"></div>
 				</div><a class="btn-icon-mob" href="#!">Вся команда<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff"/>
 </svg></a>
+				<div class="pagination-wrapper"> 
+					<div class="pagination__divider"> </div>
+					<div class="pagination"> <a class="pagination__link pagination-prev" href="#!">
+							<svg class="svg-prev">
+								<use href="./img/spriteSvg.svg#svg-prev"></use>
+							</svg></a>
+						<div class="pagination__link-active">1</div><a class="pagination__link" href="#!">2</a>
+						<div class="pagination__ellipsis">... </div><a class="pagination__link" href="#!">8</a><a class="pagination__link pagination-next" href="#!">
+							<svg class="svg-next">
+								<use href="./img/spriteSvg.svg#svg-next"></use>
+							</svg></a>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="partners none">
@@ -494,8 +478,6 @@
 						<div class="swiper-slide"><img src="./img/partners/03.webp" alt="logo"></div>
 						<div class="swiper-slide"><img src="./img/partners/04.webp" alt="logo"></div>
 						<div class="swiper-slide"><img src="./img/partners/05.webp" alt="logo"></div>
-						<div class="swiper-slide"><img src="./img/partners/01.webp" alt="logo"></div>
-						<div class="swiper-slide"><img src="./img/partners/02.webp" alt="logo"></div>
 					</div>
 				</div>
 			</div>
@@ -556,6 +538,7 @@
 		</section>
 		<script src="libs/swiper.js"></script>
 		<script src="libs/swiper-bundle.min.js.map"></script>
+		<script src="js/toggleMenu.js"></script>
 		<script src="js/tabs.js"></script>
 		<script src="js/SwiperAdder.js"></script>
 		<script src="js/main.js"></script>

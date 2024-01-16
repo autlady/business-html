@@ -1,17 +1,4 @@
-// const toggleMenu = document.querySelector('menu-burger');
 
-// if (toggleMenu){
-//     toggleMenu.addEventListener('click', function(){
-        
-//         if(this.classList.contains('active')){
-//             this.classList.remove('active');
-//         }else{
-//             this.classList.add('active');
-//         }
-//     })
-// }
-
-  // Programs slider
 
 /*=========== SWIPER CLASS ========== */
 (function () {
@@ -50,144 +37,94 @@
       }
     },
   });
+
+  swips.addSwiper(".persons-slider", "min-width:1200px", {
+    // Optional parameters
+  slidesPerView: 4,
+  spaceBetween: 20,
+  // loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    580: {
+      slidesPerView: 3,
+    },
+    900: {
+      slidesPerView: 4,
+    },
+  },
+  });
+
+  swips.addSwiper(".board-slider", "min-width:1200px", {
+    // Optional parameters
+  // Optional parameters
+  slidesPerView: 4,
+  spaceBetween: 20,
+  // loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    580: {
+      slidesPerView: 3,
+    },
+    900: {
+      slidesPerView: 4,
+    },
+  },
+  });
+
+  swips.addSwiper(".news-slider", "min-width:1200px", {
+    // Optional parameters
+  // Optional parameters
+  slidesPerView: 4,
+  spaceBetween: 20,
+  // loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    580: {
+      slidesPerView: 3,
+    },
+    900: {
+      slidesPerView: 4,
+    },
+  },
+  });
+
+
   swips.init();
 })();
 
-// const swiperPrograms = new Swiper('.programs-slider', {
-
-//   slidesPerView: 4,
-//   spaceBetween: 20,
-
-
-  
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
-
-
-//   navigation: {
-//     nextEl: '.program-slider-next',
-//     prevEl: '.program-slider-prev',
-//   },
-
-//   breakpoints: {
-//     320: {
-//       slidesPerView: 2,
-//     },
-//     580: {
-//       slidesPerView: 3,
-//     },
-//     900: {
-//       slidesPerView: 4,
-//     },
-//   },
-// });
-
-  // Persons slider
-const swiperPersons = new Swiper('.persons-slider', {
-  // Optional parameters
-  slidesPerView: 4,
-  spaceBetween: 20,
-  // loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.program-slider-next',
-    prevEl: '.program-slider-prev',
-  },
-
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-    480: {
-      slidesPerView: 2,
-    },
-    580: {
-      slidesPerView: 3,
-    },
-    900: {
-      slidesPerView: 4,
-    },
-  },
-});
-
-// Board slider
-const swiperBoard = new Swiper('.board-slider', {
-  // Optional parameters
-  slidesPerView: 4,
-  spaceBetween: 20,
-  // loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.program-slider-next',
-    prevEl: '.program-slider-prev',
-  },
-
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-    480: {
-      slidesPerView: 2,
-    },
-    580: {
-      slidesPerView: 3,
-    },
-    900: {
-      slidesPerView: 4,
-    },
-  },
-});
-
-// News slider
-
-const swiperNews = new Swiper('.news-slider', {
-  // Optional parameters
-  slidesPerView: 4,
-  spaceBetween: 20,
-  // loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.program-slider-next',
-    prevEl: '.program-slider-prev',
-  },
-
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-    },
-    480: {
-      slidesPerView: 2,
-    },
-    580: {
-      slidesPerView: 3,
-    },
-    900: {
-      slidesPerView: 4,
-    },
-  },
-});
 
 // Cases slider
 
