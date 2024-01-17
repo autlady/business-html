@@ -21,26 +21,28 @@
 						<div class="social-icons-mob"><a class="social-icons-mob__item" href="#!"><img src="./img/socials/phone.svg" alt="phone"></a><a class="social-icons-mob__item icon-divider" href="#!"><img src="./img/socials/bluewhatsapp.svg" alt="whatsapp"></a><a class="social-icons-mob__item" href="#!"><img src="./img/socials/bluetelegram.svg" alt="telegram"></a></div>
 						<button class="menu-toggle" id="menu-toggle"><span></span></button>
 					</div>
-					<div class="aside-menu">
-						<div class="aside-menu-top">
-							<div class="aside-menu__logo"> <a class="menu-logo-img" href="#!"><img src="./img/logo.webp" alt="logo"></a><a class="menu-logo-text" href="#!">АНО Центр защиты бизнеса  </a></div>
-							<div class="aside-menu__social"><a class="aside-menu__social-item" href="#!"><img src="./img/socials/whatsapp.svg"><span>WhatsApp</span></a><a class="aside-menu__social-item" href="#!"><img src="./img/socials/tg.svg"><span>Telegram</span></a></div><a class="aside-menu-tel" href="tel:89998889090">+7 999 888 90 09   </a>
+					<div class="aside-menu-wrapper">
+						<div class="aside-menu">
+							<div class="aside-menu-top">
+								<div class="aside-menu__logo"> <a class="menu-logo-img" href="#!"><img src="./img/logo.webp" alt="logo"></a><a class="menu-logo-text" href="#!">АНО Центр защиты бизнеса  </a></div>
+								<div class="aside-menu__social"><a class="aside-menu__social-item" href="#!"><img src="./img/socials/whatsapp.svg"><span>WhatsApp</span></a><a class="aside-menu__social-item" href="#!"><img src="./img/socials/tg.svg"><span>Telegram</span></a></div><a class="aside-menu-tel" href="tel:89998889090">+7 999 888 90 09   </a>
+							</div>
+							<ul class="nav__list">
+								<li><a href="#!">Главная</a></li>
+								<li><a href="#!">О нас</a></li>
+								<li><a href="#!">Образовательные программы</a></li>
+								<li><a href="#!">Сервисы</a></li>
+								<li><a href="#!">Статьи</a></li>
+								<li><a href="#!">Команда</a></li>
+								<li><a href="#!">Кейсы</a></li>
+								<li><a href="#!">Новости</a></li>
+							</ul>
 						</div>
-						<ul class="nav__list">
-							<li><a href="#!">Главная</a></li>
-							<li><a href="#!">О нас</a></li>
-							<li><a href="#!">Образовательные программы</a></li>
-							<li><a href="#!">Сервисы</a></li>
-							<li><a href="#!">Статьи</a></li>
-							<li><a href="#!">Команда</a></li>
-							<li><a href="#!">Кейсы</a></li>
-							<li><a href="#!">Новости</a></li>
-						</ul>
 					</div>
 				</div>
 			</div>
 		</header>
-		<section class="header-banner none">
+		<section class="header-banner">
 			<div class="container">
 				<div class="header-banner-content"> 
 					<div class="header-banner__title">
@@ -52,7 +54,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="programs none">
+		<section class="programs">
 			<div class="container"> 
 				<div class="title-group">
 					<p class="back-title">Чему мы обучаем</p>
@@ -146,7 +148,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="cta none">
+		<section class="cta">
 			<div class="container"> 
 				<div class="cta-content"> 
 					<div class="cta__title"> 
@@ -160,7 +162,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="services none">
+		<section class="services">
 			<div class="container"> 
 				<div class="title-group">
 					<p class="back-title">Наша компетенция</p>
@@ -168,20 +170,130 @@
 				</div>
 				<div class="services-content"> 
 					<div class="form-group-title">Для кого</div>
-					<div class="form-group">
-						<div class="select-wrapper">
-							<select class="select-services" name="select-category" id="">
-								<option value="1">Заметки путешественника</option>
-								<option value="2">Конспекты</option>
-								<option value="3">Фотоальбом</option>
-								<option value="4">Дневник</option>
-							</select>
+					<div class="form-wrapper">
+						<div class="form-group">
+							<div class="dropdown">
+								<button class="dropdown__button">Не выбран</button>
+								<ul class="dropdown__list"> 
+									<li class="dropdown__list-item" data-value="item1">item1</li>
+									<li class="dropdown__list-item" data-value="item2">item2</li>
+									<li class="dropdown__list-item" data-value="item3">item3</li>
+									<li class="dropdown__list-item" data-value="item4">item4</li>
+								</ul>
+								<input class="dropdown__input-hidden" type="text" name="selet-category" value="">
+							</div>
+						</div>
+						<div class="swiper services-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="service-card">White label web development</div>
+									<div class="service-card">White label website maintenance</div>
+									<div class="service-card">White label web development</div>
+									<div class="service-card">White label eCommerce development</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="service-card">White label SEO service</div>
+									<div class="service-card">White label web development</div>
+									<div class="service-card">White label website maintenance</div>
+									<div class="service-card">White label eCommerce development</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="service-card">White label SEO service</div>
+									<div class="service-card">White label web development</div>
+									<div class="service-card">White label website maintenance</div>
+									<div class="service-card">White label eCommerce development</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div><a class="btn-icon-mob" href="#!">Все сервисы<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff"/>
+</svg></a>
+				</div>
+			</div>
+		</section>
+		<section class="articles">
+			<div class="container"> 
+				<div class="title-group">
+					<p class="back-title">Научная литература</p>
+					<h2 class="section-title">Статьи</h2>
+				</div>
+				<div class="articles-content"> 
+					<div class="articles-form">
+						<div class="form-group-title">Cтатус</div>
+						<div class="form-group">
+							<div class="dropdown">
+								<button class="dropdown__button">Не выбран</button>
+								<ul class="dropdown__list"> 
+									<li class="dropdown__list-item" data-value="item1">item1</li>
+									<li class="dropdown__list-item" data-value="item2">item2</li>
+									<li class="dropdown__list-item" data-value="item3">item3</li>
+									<li class="dropdown__list-item" data-value="item4">item4</li>
+								</ul>
+								<input class="dropdown__input-hidden" type="text" name="selet-category" value="">
+							</div>
+						</div>
+						<div class="form-group-title">Отрасль науки</div>
+						<div class="form-group">
+							<div class="dropdown">
+								<button class="dropdown__button">Не выбран</button>
+								<ul class="dropdown__list"> 
+									<li class="dropdown__list-item" data-value="item1">item1</li>
+									<li class="dropdown__list-item" data-value="item2">item2</li>
+									<li class="dropdown__list-item" data-value="item3">item3</li>
+									<li class="dropdown__list-item" data-value="item4">item4</li>
+								</ul>
+								<input class="dropdown__input-hidden" type="text" name="selet-category" value="">
+							</div>
+						</div>
+						<div class="form-group-title">Группа специальностей</div>
+						<div class="form-group">
+							<div class="dropdown">
+								<button class="dropdown__button">Не выбран</button>
+								<ul class="dropdown__list"> 
+									<li class="dropdown__list-item" data-value="item1">item1</li>
+									<li class="dropdown__list-item" data-value="item2">item2</li>
+									<li class="dropdown__list-item" data-value="item3">item3</li>
+									<li class="dropdown__list-item" data-value="item4">item4</li>
+								</ul>
+								<input class="dropdown__input-hidden" type="text" name="selet-category" value="">
+							</div>
+						</div>
+						<div class="form-group-title">Фильтр</div>
+						<div class="form-group">
+							<div class="dropdown">
+								<button class="dropdown__button">Не выбран</button>
+								<ul class="dropdown__list"> 
+									<li class="dropdown__list-item" data-value="item1">item1</li>
+									<li class="dropdown__list-item" data-value="item2">item2</li>
+									<li class="dropdown__list-item" data-value="item3">item3</li>
+									<li class="dropdown__list-item" data-value="item4">item4</li>
+								</ul>
+								<input class="dropdown__input-hidden" type="text" name="selet-category" value="">
+							</div>
+						</div>
+						<div class="form-group"> 
+							<label>
+								<input class="real-checkbox" type="checkbox" name="coding-notes"><span class="custom-checkbox">Заметки</span>
+							</label>
+						</div>
+						<div class="form-group"> 
+							<label>
+								<input class="real-checkbox" type="checkbox" name="travel-notes"><span class="custom-checkbox">Тревел</span>
+							</label>
+						</div>
+						<button class="btn btn--reset">Cбросить фильтры</button>
+					</div>
+					<div class="articles-list">
+						<div class="article-card"> 
+							<div class="article-card__title"></div>
+							<div class="article-card__label"></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="board none">
+		<section class="board">
 			<div class="container"> 
 				<div class="title-group">
 					<p class="back-title">Эксперты</p>
@@ -243,7 +355,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="cases none">
+		<section class="cases">
 			<div class="container"> 
 				<div class="title-group">
 					<p class="back-title">Результаты работы</p>
@@ -324,7 +436,7 @@
 </svg></a>
 			</div>
 		</section>
-		<section class="news none">
+		<section class="news">
 			<div class="container"> 
 				<div class="title-group">
 					<p class="back-title">События</p>
@@ -333,7 +445,7 @@
 </svg></a>
 				</div>
 				<ul class="list-group">
-					<li class="list-group-item" data-tab="tab-1">Лента</li>
+					<li class="list-group-item active" data-tab="tab-1">Лента</li>
 					<li class="list-group-item" data-tab="tab-2">Новости</li>
 					<li class="list-group-item" data-tab="tab-3">СМИ</li>
 					<li class="list-group-item" data-tab="tab-4">Мероприятия</li>
@@ -389,21 +501,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="card hidden" data-tab-content id="tab-2">
-					<h1>таб2</h1>
-				</div>
-				<div class="card hidden" data-tab-content id="tab-3">
-					<h1>таб3</h1>
-				</div>
-				<div class="card hidden" data-tab-content id="tab-4">
-					<h1>таб4</h1>
-				</div>
-				<div class="card hidden" data-tab-content id="tab-5">
-					<h1>таб5</h1>
-				</div>
+				<div class="card hidden" data-tab-content id="tab-2"></div>
+				<div class="card hidden" data-tab-content id="tab-3"></div>
+				<div class="card hidden" data-tab-content id="tab-4"></div>
+				<div class="card hidden" data-tab-content id="tab-5"></div>
 			</div>
 		</section>
-		<section class="team none">
+		<section class="team">
 			<div class="container"> 
 				<div class="title-group">
 					<p class="back-title">Профессионалы</p>
@@ -540,6 +644,7 @@
 		<script src="libs/swiper-bundle.min.js.map"></script>
 		<script src="js/toggleMenu.js"></script>
 		<script src="js/tabs.js"></script>
+		<script src="js/select.js"></script>
 		<script src="js/SwiperAdder.js"></script>
 		<script src="js/main.js"></script>
 	</body>
