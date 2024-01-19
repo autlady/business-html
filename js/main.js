@@ -66,11 +66,10 @@
   });
 
   swips.addSwiper(".services-slider", "min-width:1200px", {
-    // Optional parameters
+
   // Optional parameters
-  slidesPerView: 4,
+  slidesPerView: 3,
   spaceBetween: 20,
-  // loop: true,
 
   // If we need pagination
   pagination: {
@@ -87,18 +86,17 @@
     580: {
       slidesPerView: 3,
     },
-    900: {
-      slidesPerView: 4,
-    },
+    // 900: {
+    //   slidesPerView: 3,
+    // },
   },
   });
 
   swips.addSwiper(".board-slider", "min-width:1200px", {
-    // Optional parameters
+
   // Optional parameters
   slidesPerView: 4,
   spaceBetween: 20,
-  // loop: true,
 
   // If we need pagination
   pagination: {
@@ -122,11 +120,10 @@
   });
 
   swips.addSwiper(".news-slider", "min-width:1200px", {
-    // Optional parameters
+ 
   // Optional parameters
   slidesPerView: 4,
   spaceBetween: 20,
-  // loop: true,
 
   // If we need pagination
   pagination: {
@@ -160,12 +157,15 @@ const swiperCases = new Swiper('.cases-slider', {
   // Optional parameters
   slidesPerView: 1,
   spaceBetween: 20,
-  // loop: true,
 
   // Navigation arrows
   navigation: {
     nextEl: '.program-slider-next',
     prevEl: '.program-slider-prev',
+  },
+
+    pagination: {
+    el: '.swiper-pagination',
   },
 });
 
@@ -175,7 +175,6 @@ const swiperPartners = new Swiper('.partners-slider', {
   // Optional parameters
   slidesPerView: 5,
   spaceBetween: 20,
-  // loop: true,
 
   breakpoints: {
     320: {
