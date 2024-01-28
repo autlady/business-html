@@ -79,9 +79,6 @@
     580: {
       slidesPerView: 3,
     },
-    // 900: {
-    //   slidesPerView: 3,
-    // },
   },
   });
 
@@ -180,4 +177,30 @@ const swiperPartners = new Swiper('.partners-slider', {
       slidesPerView: 5,
     },
   },
+});
+
+// Teachers slider
+
+const swiperTeachers = new Swiper('.teachers-slider', {
+  // Optional parameters
+  slidesPerView: 1,
+  spaceBetween: 20,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.program-slider-next',
+    prevEl: '.program-slider-prev',
+  },
+
+    pagination: {
+    el: '.swiper-pagination',
+  },
+});
+
+// Documents slider
+
+const swiperDocuments = new Swiper('.documents-slider', {
+  // Optional parameters
+  slidesPerView: 4,
+  spaceBetween: 8,
 });
