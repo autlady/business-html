@@ -201,6 +201,84 @@ const swiperTeachers = new Swiper('.teachers-slider', {
 
 const swiperDocuments = new Swiper('.documents-slider', {
   // Optional parameters
-  slidesPerView: 4,
+  slidesPerView: 3.5,
   spaceBetween: 8,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1.5,
+    },
+    570: {
+      slidesPerView: 2,
+    },
+    712: {
+      slidesPerView: 2.5,
+    },
+    846: {
+      slidesPerView: 3,
+    },
+    970: {
+      slidesPerView: 3.5,
+    },
+  },
+});
+
+// Reviews slider
+
+const swiperReviews = new Swiper('.reviews-slider', {
+  // Optional parameters
+  slidesPerView: 2,
+  spaceBetween: 20,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.program-slider-next',
+    prevEl: '.program-slider-prev',
+  },
+});
+
+// Thankyou Programs slider
+
+const swiperThankyouPrograms = new Swiper('.thankyou-programs-slider', {
+  // Optional parameters
+  slidesPerView: 3,
+  spaceBetween: 20,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1.3,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    712: {
+      slidesPerView: 2.5,
+    },
+    846: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+// Thankyou Services slider
+
+const swiperThankyouServices = new Swiper('.thankyou-services-slider', {
+  // Optional parameters
+  slidesPerView: 3,
+  spaceBetween: 20,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1.3,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    712: {
+      slidesPerView: 2.5,
+    },
+    846: {
+      slidesPerView: 3,
+    },
+  },
 });
