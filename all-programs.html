@@ -136,15 +136,17 @@
             </button>
             <div class="select-wrapper">
               <p class="selected">Выбранные фильтры:</p>
-              <div class="filter">
-                <span>Бесплатное</span>
-                <button class="close-filter">
-                  <svg class="svg-icon-close">
-                    <use href="./img/spriteSvg.svg#svg-icon-close"></use>
-                  </svg>
-                </button>
+              <div class="current-filters">
+                <div class="filter">
+                  <span>Бесплатное</span>
+                  <button class="close-filter">
+                    <svg class="svg-icon-close">
+                      <use href="./img/spriteSvg.svg#svg-icon-close"></use>
+                    </svg>
+                  </button>
+                </div>
               </div>
-              <button class="btn-reset">Сбросить</button>
+              <button class="btn-reset" id="filters-reset">Сбросить</button>
             </div>
             <p class="filter-result">Найдено:<span> 48 </span>
             </p>
@@ -558,6 +560,7 @@
   <script src="js/modal.js"></script>
   <script src="js/expand.js"></script>
   <script src="js/accordeon.js"></script>
+  <script src="js/filter.js"></script>
   <script src="js/main.js"></script>
 </body>
 

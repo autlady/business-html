@@ -210,23 +210,25 @@
           <!-- articles-->
           <div class="articles-inner-wrapper">
             <div class="select-wrapper">
-              <div class="filter">
-                <span>Фильтр</span>
-                <button class="close-filter">
-                  <svg class="svg-icon-close">
-                    <use href="./img/spriteSvg.svg#svg-icon-close"></use>
-                  </svg>
-                </button>
+              <div class="current-filters">
+                <div class="filter">
+                  <span>Фильтр</span>
+                  <button class="close-filter">
+                    <svg class="svg-icon-close">
+                      <use href="./img/spriteSvg.svg#svg-icon-close"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="filter">
+                  <span>Фильтр</span>
+                  <button class="close-filter">
+                    <svg class="svg-icon-close">
+                      <use href="./img/spriteSvg.svg#svg-icon-close"></use>
+                    </svg>
+                  </button>
+                </div>
               </div>
-              <div class="filter">
-                <span>Фильтр</span>
-                <button class="close-filter">
-                  <svg class="svg-icon-close">
-                    <use href="./img/spriteSvg.svg#svg-icon-close"></use>
-                  </svg>
-                </button>
-              </div>
-              <button class="btn-reset">Сбросить</button>
+              <button class="btn-reset" id="filters-reset">Сбросить</button>
             </div>
             <!-- article-card-->
             <a class="article-inner-card" href="article-inner.html">
@@ -661,6 +663,7 @@
   <script src="js/modal.js"></script>
   <script src="js/expand.js"></script>
   <script src="js/accordeon.js"></script>
+  <script src="js/filter.js"></script>
   <script src="js/main.js"></script>
 </body>
 
