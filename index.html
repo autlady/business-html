@@ -1,1228 +1,927 @@
-<!-- module-->
-<!DOCTYPE html>
+
+<!-- module--><!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="libs/swiper.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Главная</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="container container-header">
-      <div class="header-content">
-        <div class="header__logo">
-          <a class="logo-img" href="index.html">
-            <img src="./img/logo.webp" alt="logo">
-          </a>
-          <a class="logo-text" href="index.html">АНО Центр защиты бизнеса</a>
-        </div>
-        <div class="header-info">
-          <div class="social-icons">
-            <a class="social-icons__item" href="#!">
-              <svg width="44.000000" height="38.000244" viewBox="0 0 44 38.0002" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path id="Vector" d="M1 16L13 22L31 10L19 25L37 37L43 1L1 16Z" stroke="currentColor" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" />
-              </svg>
-            </a>
-            <a class="social-icons__item" href="#!">
-              <svg width="45.000000" height="45.000000" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect width="45.000000" height="45.000000" fill="#FFFFFF" fill-opacity="0" />
-                <path d="M6.29883 19.8267C7.07227 15.7583 9.30273 12.1121 12.5742 9.57251C15.8447 7.03271 19.9307 5.77441 24.0635 6.0332C28.1963 6.29224 32.0928 8.05103 35.0205 10.9792C37.9492 13.9075 39.708 17.8037 39.9668 21.9368C40.2256 26.0696 38.9668 30.155 36.4277 33.426C33.8877 36.6968 30.2412 38.9282 26.1729 39.7012C22.1045 40.4741 17.8945 39.7356 14.332 37.624L8.44629 39.2905C8.20605 39.3611 7.9502 39.3652 7.70703 39.303C7.46289 39.2407 7.24121 39.1143 7.06348 38.9365C6.88574 38.759 6.75879 38.5369 6.69727 38.2935C6.63477 38.05 6.63867 37.7944 6.70996 37.5532L8.37598 31.668C6.26465 28.1055 5.52539 23.895 6.29883 19.8267Z" stroke="currentColor" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" />
-                <path d="M21.6934 30.9368C19.9814 30.2302 18.4268 29.1924 17.1172 27.8831C15.8076 26.5735 14.7695 25.0183 14.0635 23.3064C13.3564 21.5947 12.9951 19.7603 13 17.9084C13.0049 16.605 13.5254 15.3564 14.4492 14.4365C15.3721 13.5166 16.623 13 17.9258 13C18.1406 12.9983 18.3525 13.0547 18.5381 13.1628C18.7236 13.2712 18.877 13.4277 18.9814 13.6157L21.04 17.2046C21.1621 17.4229 21.2246 17.6694 21.2217 17.9194C21.2188 18.1697 21.1504 18.4146 21.0225 18.6296L19.3682 21.3916C20.2158 23.2759 21.7236 24.7844 23.6084 25.6313L26.3701 23.9778C26.585 23.8501 26.8301 23.7812 27.0801 23.7781C27.3311 23.7749 27.5771 23.8379 27.7949 23.9602L31.3838 26.0186C31.5723 26.1228 31.7285 26.2759 31.8369 26.4617C31.9453 26.6475 32.002 26.8589 32 27.074C31.9951 28.376 31.4775 29.6235 30.5586 30.5459C29.6396 31.4683 28.3936 31.9907 27.0918 32C25.2402 32.0046 23.4053 31.6433 21.6934 30.9368Z" stroke="currentColor" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" />
-              </svg>
-            </a>
-          </div>
-          <a class="contact-phone" href="tel:89994442211">+7 (999) 444 22 11</a>
-          <button class="menu-toggle">
-            <span></span>
-          </button>
-        </div>
-        <div class="mob-info">
-          <div class="social-icons-mob">
-            <a class="social-icons-mob__item" href="#!">
-              <svg width="24" height="20" viewBox="0 0 19 17.9998" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path id="Vector" d="M14.6377 10.0813L14.6123 10.0723Q14.3848 9.99194 14.2305 9.95679Q13.9297 9.88818 13.6572 9.91895Q13.4512 9.94214 13.2656 10.0168Q12.833 10.1917 12.5137 10.6479Q12.3389 10.9092 11.877 11.4812Q11.6221 11.7981 11.4258 12.0317Q11.3574 12.0012 11.2627 11.9597Q10.5859 11.665 10.0986 11.3804Q9.21777 10.866 8.41211 10.1372Q7.33984 9.16797 6.40918 7.65454Q6.55762 7.48999 6.79395 7.20117Q6.9248 7.04004 6.98438 6.97021Q7.16504 6.75659 7.30371 6.52075Q7.38184 6.38745 7.50684 6.13135Q7.52832 6.0874 7.54004 6.06494L7.54492 6.05444L7.5498 6.0437Q7.69922 5.72266 7.71777 5.39404Q7.74414 4.92651 7.50586 4.44385Q7.45215 4.3335 6.98242 3.17871Q6.54102 2.09204 6.25586 1.3689Q5.93164 0.581543 5.41211 0.25293Q5.29785 0.180664 5.1748 0.129395Q5.01465 0.0629883 4.84082 0.0319824Q4.69141 0.00537109 4.4834 0.00292969Q4.44824 0.00244141 4.44629 0.00219727L4.41309 0L3.56836 0Q3.44238 0 3.31738 0.0134277Q2.98926 0.0490723 2.6709 0.178711Q2.55664 0.225586 2.44727 0.283203Q2.04102 0.496826 1.71289 0.858643Q1.6748 0.901611 1.61133 0.972412Q1.33594 1.27832 1.16406 1.50537Q0.850586 1.91724 0.624023 2.36157Q0.541992 2.52246 0.470703 2.68799Q0 3.78003 0 5.07471Q0 6.62646 0.875977 8.38086Q1.03906 8.70728 1.22266 9.02197Q1.5293 9.54663 1.89258 10.0381Q1.90039 10.0505 1.91895 10.0779Q2.94336 11.595 4.22559 12.9463Q5.33008 14.1118 6.50195 15.009Q7.95508 16.1221 9.45312 16.7766Q10.6152 17.2957 11.9395 17.7058Q12.7373 17.9663 13.6211 17.9961Q14.2627 18.0178 15.0107 17.9119Q15.4551 17.8464 15.998 17.6155Q16.5186 17.3943 17.0049 17.0771Q17.5547 16.719 17.9453 16.311Q18.4482 15.7864 18.6396 15.2239Q18.9219 14.4331 18.9854 13.6724Q19.0576 12.7974 18.7764 12.3496Q18.5869 12.0479 18.2402 11.8367Q18.0996 11.7507 17.79 11.6057Q17.6494 11.54 17.5723 11.5029Q17.4717 11.4536 17.0215 11.2314Q14.9736 10.2205 14.6631 10.0916L14.6377 10.0813ZM2.70605 9.45752C2.90918 9.74854 5.66309 14.0286 9.85352 15.8604C10.8496 16.3054 11.627 16.5623 12.2354 16.7507C13.2324 17.0759 14.1445 17.0247 14.8711 16.9219C15.6826 16.802 17.3545 15.8945 17.6924 14.9016C18.0479 13.9087 18.0479 13.0698 17.9297 12.8813C17.8105 12.6931 17.5576 12.6074 17.1348 12.4021C16.7129 12.1965 14.6514 11.1694 14.2803 11.0154C13.8916 10.8784 13.6211 10.8098 13.334 11.2207C13.0469 11.6487 12.252 12.6074 12.0156 12.8813C11.7793 13.1726 11.5264 13.2068 11.1035 12.9841C10.6807 12.7788 9.3291 12.3164 7.74121 10.8784C6.49121 9.74854 5.66309 8.36182 5.41016 7.93359C5.17285 7.50562 5.37598 7.2832 5.5957 7.06055C5.78125 6.87231 6.01758 6.56396 6.2207 6.32446C6.42383 6.08472 6.50781 5.89648 6.64355 5.62256C6.77832 5.33154 6.71094 5.0918 6.60938 4.88623C6.50781 4.68091 5.66309 2.59229 5.3252 1.73608C5.02637 1.00952 4.71484 1.00562 4.4707 1.00269C4.43945 1.00244 4.4082 1.00195 4.37891 1L3.56836 1C3.28125 1 2.8418 1.10278 2.45312 1.53076C2.08105 1.95874 1 2.98584 1 5.07471C1 7.16333 2.50391 9.18359 2.70605 9.45752Z" fill="currentColor" fill-opacity="1.000000" fill-rule="evenodd" />
-              </svg>
-            </a>
-            <a class="social-icons-mob__item icon-divider" href="#!">
-              <svg width="24" height="24" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect width="45.000000" height="45.000000" fill="#FFFFFF" fill-opacity="0" />
-                <path d="M6.29883 19.8267C7.07227 15.7583 9.30273 12.1121 12.5742 9.57251C15.8447 7.03271 19.9307 5.77441 24.0635 6.0332C28.1963 6.29224 32.0928 8.05103 35.0205 10.9792C37.9492 13.9075 39.708 17.8037 39.9668 21.9368C40.2256 26.0696 38.9668 30.155 36.4277 33.426C33.8877 36.6968 30.2412 38.9282 26.1729 39.7012C22.1045 40.4741 17.8945 39.7356 14.332 37.624L8.44629 39.2905C8.20605 39.3611 7.9502 39.3652 7.70703 39.303C7.46289 39.2407 7.24121 39.1143 7.06348 38.9365C6.88574 38.759 6.75879 38.5369 6.69727 38.2935C6.63477 38.05 6.63867 37.7944 6.70996 37.5532L8.37598 31.668C6.26465 28.1055 5.52539 23.895 6.29883 19.8267Z" stroke="currentColor" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" />
-                <path d="M21.6934 30.9368C19.9814 30.2302 18.4268 29.1924 17.1172 27.8831C15.8076 26.5735 14.7695 25.0183 14.0635 23.3064C13.3564 21.5947 12.9951 19.7603 13 17.9084C13.0049 16.605 13.5254 15.3564 14.4492 14.4365C15.3721 13.5166 16.623 13 17.9258 13C18.1406 12.9983 18.3525 13.0547 18.5381 13.1628C18.7236 13.2712 18.877 13.4277 18.9814 13.6157L21.04 17.2046C21.1621 17.4229 21.2246 17.6694 21.2217 17.9194C21.2188 18.1697 21.1504 18.4146 21.0225 18.6296L19.3682 21.3916C20.2158 23.2759 21.7236 24.7844 23.6084 25.6313L26.3701 23.9778C26.585 23.8501 26.8301 23.7812 27.0801 23.7781C27.3311 23.7749 27.5771 23.8379 27.7949 23.9602L31.3838 26.0186C31.5723 26.1228 31.7285 26.2759 31.8369 26.4617C31.9453 26.6475 32.002 26.8589 32 27.074C31.9951 28.376 31.4775 29.6235 30.5586 30.5459C29.6396 31.4683 28.3936 31.9907 27.0918 32C25.2402 32.0046 23.4053 31.6433 21.6934 30.9368Z" stroke="currentColor" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" />
-              </svg>
-            </a>
-            <a class="social-icons-mob__item" href="#!">
-              <svg width="24" height="24" viewBox="0 0 44 38.0002" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path id="Vector" d="M1 16L13 22L31 10L19 25L37 37L43 1L1 16Z" stroke="currentColor" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" />
-              </svg>
-            </a>
-          </div>
-          <button class="menu-toggle">
-            <span></span>
-          </button>
-        </div>
-        <div class="aside-menu-wrapper">
-          <!-- aside-menu-->
-          <div class="aside-menu">
-            <div class="aside-menu-top">
-              <div class="aside-menu__logo">
-                <a class="menu-logo-img" href="#!">
-                  <img src="./img/logo.webp" alt="logo">
-                </a>
-                <a class="menu-logo-text" href="#!">АНО Центр защиты бизнеса </a>
-              </div>
-              <div class="aside-menu__social">
-                <a class="aside-menu__social-item" href="#!">
-                  <img src="./img/socials/whatsapp.svg" alt="whatsapp">
-                  <span>WhatsApp</span>
-                </a>
-                <a class="aside-menu__social-item" href="#!">
-                  <img src="./img/socials/tg.svg" alt="telegram">
-                  <span>Telegram</span>
-                </a>
-              </div>
-              <a class="aside-menu-tel" href="tel:89998889090">+7 999 888 90 09 </a>
-            </div>
-            <ul class="nav__list">
-              <li>
-                <a href="index.html">Главная</a>
-              </li>
-              <li>
-                <a href="about-us.html">О нас</a>
-              </li>
-              <li>
-                <a href="all-programs.html">Образовательные программы</a>
-              </li>
-              <li>
-                <a href="services-page.html">Сервисы</a>
-              </li>
-              <li>
-                <a href="articles.html">Статьи</a>
-              </li>
-              <li>
-                <a href="team-inner.html">Команда</a>
-              </li>
-              <li>
-                <a href="cases.html">Кейсы</a>
-              </li>
-              <li>
-                <a href="all-news.html">Новости</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="header-banner">
-      <div class="container">
-        <div class="header-banner-content">
-          <div class="header-banner__title">
-            <h1 class="headline">АНО Центр защиты бизнеса</h1>
-          </div>
-          <div class="header-banner__text">
-            <p>Body Extra Large. Most fonts have a particular weight which corresponds to one of the numbers in Common weight name mapping. However some fonts, called variable fonts, can support a range of weights with a more.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="programs">
-      <div class="container">
-        <div class="title-group">
-          <p class="back-title">Чему мы обучаем</p>
-          <h2 class="section-title">Образовательные программы</h2>
-          <a class="btn-icon" href="all-programs.html">Все программы<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff" />
-            </svg>
-          </a>
-        </div>
-        <!-- programs - slider-->
-        <div class="swiper programs-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <!-- program-card-->
-              <a class="program-card" href="program.html">
-                <h3 class="program-card__title">Название направления</h3>
-                <p class="program-card__text">We provide constant monitoring and repairing services to make your site active 24/7. We provide constant monitoring and repairing services to make your site active 24/7.</p>
-                <div class="program-card__link">
-                  <span>Подробнее</span>
-                  <svg class="svg-arrow-right">
-                    <use href="./img/spriteSvg.svg#svg-arrow-right"></use>
-                  </svg>
-                </div>
-              </a>
-              <!-- program-card-->
-              <a class="program-card" href="program.html">
-                <h3 class="program-card__title">Название направления</h3>
-                <p class="program-card__text">We provide constant monitoring and repairing services to make your site active 24/7.</p>
-                <div class="program-card__link">
-                  <span>Подробнее</span>
-                  <svg class="svg-arrow-right">
-                    <use href="./img/spriteSvg.svg#svg-arrow-right"></use>
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <!-- program-card-->
-              <a class="program-card" href="program.html">
-                <h3 class="program-card__title">Название направления</h3>
-                <p class="program-card__text">We provide constant monitoring and repairing services to make your site active 24/7.</p>
-                <div class="program-card__link">
-                  <span>Подробнее</span>
-                  <svg class="svg-arrow-right">
-                    <use href="./img/spriteSvg.svg#svg-arrow-right"></use>
-                  </svg>
-                </div>
-              </a>
-              <!-- program-card-->
-              <a class="program-card" href="program.html">
-                <h3 class="program-card__title">Название направления</h3>
-                <p class="program-card__text">We provide constant monitoring and repairing services to make your site active 24/7.</p>
-                <div class="program-card__link">
-                  <span>Подробнее</span>
-                  <svg class="svg-arrow-right">
-                    <use href="./img/spriteSvg.svg#svg-arrow-right"></use>
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <!-- program-card-->
-              <a class="program-card" href="program.html">
-                <h3 class="program-card__title">Название направления</h3>
-                <p class="program-card__text">We provide constant monitoring and repairing services to make your site active 24/7.</p>
-                <div class="program-card__link">
-                  <span>Подробнее</span>
-                  <svg class="svg-arrow-right">
-                    <use href="./img/spriteSvg.svg#svg-arrow-right"></use>
-                  </svg>
-                </div>
-              </a>
-              <!-- program-card-->
-              <a class="program-card" href="program.html">
-                <h3 class="program-card__title">Название направления</h3>
-                <p class="program-card__text">We provide constant monitoring and repairing services to make your site active 24/7.</p>
-                <div class="program-card__link">
-                  <span>Подробнее</span>
-                  <svg class="svg-arrow-right">
-                    <use href="./img/spriteSvg.svg#svg-arrow-right"></use>
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <!-- program-card-->
-              <a class="program-card" href="program.html">
-                <h3 class="program-card__title">Название направления</h3>
-                <p class="program-card__text">We provide constant monitoring and repairing services to make your site active 24/7.</p>
-                <div class="program-card__link">
-                  <span>Подробнее</span>
-                  <svg class="svg-arrow-right">
-                    <use href="./img/spriteSvg.svg#svg-arrow-right"></use>
-                  </svg>
-                </div>
-              </a>
-              <!-- program-card-->
-              <a class="program-card" href="program.html">
-                <h3 class="program-card__title">Название направления</h3>
-                <p class="program-card__text">We provide constant monitoring and repairing services to make your site active 24/7.</p>
-                <div class="program-card__link">
-                  <span>Подробнее</span>
-                  <svg class="svg-arrow-right">
-                    <use href="./img/spriteSvg.svg#svg-arrow-right"></use>
-                  </svg>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-        <a class="btn-icon-mob" href="all-programs.html">Все программы<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff" />
-          </svg>
-        </a>
-        <div class="pagination-wrapper">
-          <div class="pagination__divider"> </div>
-          <div class="pagination">
-            <a class="pagination__link pagination-prev" href="#!">
-              <svg class="svg-prev">
-                <use href="./img/spriteSvg.svg#svg-prev"></use>
-              </svg>
-            </a>
-            <div class="pagination__link-active">1</div>
-            <a class="pagination__link" href="#!">2</a>
-            <div class="pagination__ellipsis">... </div>
-            <a class="pagination__link" href="#!">8</a>
-            <a class="pagination__link pagination-next" href="#!">
-              <svg class="svg-next">
-                <use href="./img/spriteSvg.svg#svg-next"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="cta">
-      <div class="container">
-        <div class="cta-content">
-          <div class="cta__title">
-            <h2 class="section-title">Внести вклад в защиту<span> бизнеса</span>
-            </h2>
-          </div>
-          <div class="cta__text">
-            <p>Вы можете поддержать деятельность экспертов pro bono, которые уже не первый год помогают десяткам, сотням предпринимателей, оказавшимся в сложной ситуации. Организация этого процесса требует затрат, поэтому Ваш вклад сегодня – это возможность завтра в случае сложной ситуации обратиться к экспертам. Вы также можете стать членом клуба, который открывает доступ к эффективным бизнес-коммуникациям, регулярным мероприятиям, позволяющим которые дают полную юридическую поддержку на стадии, когда у бизнеса возникают сложности! У нас собрана самая эффективная команда экспертов: базовый пакет членства в клубе составляет всего 50 000 руб ежемесячно.</p>
-          </div>
-          <button class="btn-icon-support" type="button" data-modal-button="modal-service">Поддержать
-            <svg class="svg-arrow-right">
-              <use href="./img/spriteSvg.svg#svg-arrow-right"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div class="fade-block hidden" data-modal id="modal-service">
-        <div class="modal-window">
-          <div class="payment-form">
-            <div class="payment-form-title">
-              <p>As the leading agency for white label web design services, we have mastered the art of working with </p>
-            </div>
-            <form class="form-payment" action="mail.php">
-              <div class="form-item">
-                <input class="form-input" type="text" name="sum" placeholder="Cумма">
-              </div>
-              <div class="form-item">
-                <input class="form-input form-input-card" type="text" name="tel" placeholder="Номер карты">
-              </div>
-              <div class="form-item form-item--row">
-                <input class="form-input form-input-date" type="text" name="date" placeholder="ММ/ГГ">
-                <input class="form-input form-input-code" type="text" name="code" placeholder="CVV">
-              </div>
-              <div class="form-item">
-                <input class="form-input" type="text" name="email" placeholder="Электронная почта">
-              </div>
-              <div class="form-item">
-                <button class="btn btn-payment" type="submit">Оплатить 100 Р</button>
-              </div>
-            </form>
-            <button class="close-btn" id="btn-close-payment" data-modal-close>
-              <svg class="svg-close">
-                <use href="./img/spriteSvg.svg#svg-close"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="services">
-      <div class="container">
-        <div class="title-group">
-          <p class="back-title">Наша компетенция</p>
-          <h2 class="section-title">Сервисы</h2>
-        </div>
-        <div class="title-group-mob">
-          <p class="back-title">Компетенция</p>
-          <h2 class="section-title">Сервисы</h2>
-        </div>
-        <div class="services-content">
-          <label class="form-group-title">Для кого</label>
-          <div class="form-wrapper">
-            <div class="form-group">
-              <div class="dropdown">
-                <button class="dropdown__button">
-                  <span>Не выбран</span>
-                </button>
-                <ul class="dropdown__list">
-                  <li class="dropdown__list-item" data-value="item1">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item2">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item3">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item4">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item5">Аналитика</li>
-                </ul>
-                <input class="dropdown__input-hidden" type="text" name="selet-category" value="">
-              </div>
-            </div>
-            <!-- services - slider-->
-            <div class="swiper services-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="service-card-wrapper">
-                    <a class="service-card" href="service-inner.html">White label web development</a>
-                    <a class="service-card" href="service-inner.html">White label website maintenance</a>
-                    <a class="service-card" href="service-inner.html">White label web development</a>
-                    <a class="service-card" href="service-inner.html">White label eCommerce development</a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="service-card-wrapper">
-                    <a class="service-card" href="service-inner.html">White label SEO service</a>
-                    <a class="service-card" href="service-inner.html">White label web development</a>
-                    <a class="service-card" href="service-inner.html">White label website maintenance</a>
-                    <a class="service-card" href="service-inner.html">White label eCommerce development</a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="service-card-wrapper">
-                    <a class="service-card" href="service-inner.html">White label SEO service</a>
-                    <a class="service-card" href="service-inner.html">White label web development</a>
-                    <a class="service-card" href="service-inner.html">White label website maintenance</a>
-                    <a class="service-card" href="service-inner.html">White label eCommerce development</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-          <a class="btn-icon-mob" href="#!">Все сервисы<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="articles">
-      <div class="container">
-        <div class="title-group">
-          <p class="back-title">Научная литература</p>
-          <h2 class="section-title">Статьи</h2>
-        </div>
-        <div class="title-group-mob">
-          <p class="back-title">Литература</p>
-          <h2 class="section-title">Статьи</h2>
-        </div>
-        <div class="articles-list-top">
-          <div></div>
-          <button class="btn-show-filters" type="button" data-modal-button="modal-filters">
-            <span>Фильтры</span>
-            <img src="./img/icons/filter.svg" alt="Фильтры">
-          </button>
-        </div>
-        <div class="articles-content">
-          <form class="articles-form custom-form js-form">
-            <label class="form-group-title">Cтатус</label>
-            <div class="form-group">
-              <div class="dropdown">
-                <button class="dropdown__button js-btn" type="button">
-                  <span>Не выбран</span>
-                </button>
-                <ul class="dropdown__list">
-                  <li class="dropdown__list-item" data-value="item1">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item2">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item3">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item4">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item5">Аналитика</li>
-                </ul>
-                <input class="dropdown__input-hidden" type="text" name="selet-category" value="">
-              </div>
-            </div>
-            <label class="form-group-title">Отрасль науки</label>
-            <div class="form-group">
-              <div class="dropdown">
-                <button class="dropdown__button js-btn" type="button">
-                  <span>Не выбран</span>
-                </button>
-                <ul class="dropdown__list">
-                  <li class="dropdown__list-item" data-value="item1">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item2">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item3">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item4">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item5">Аналитика</li>
-                </ul>
-                <input class="dropdown__input-hidden" type="text" name="selet-category" value="">
-              </div>
-            </div>
-            <label class="form-group-title">Группа специальностей</label>
-            <div class="form-group">
-              <div class="dropdown">
-                <button class="dropdown__button js-btn" type="button">
-                  <span>Не выбран</span>
-                </button>
-                <ul class="dropdown__list">
-                  <li class="dropdown__list-item" data-value="item1">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item2">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item3">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item4">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item5">Аналитика</li>
-                </ul>
-                <input class="dropdown__input-hidden" type="text" name="selet-category" value="">
-              </div>
-            </div>
-            <label class="form-group-title">Фильтр</label>
-            <div class="form-group">
-              <div class="dropdown">
-                <button class="dropdown__button js-btn" type="button">
-                  <span>Не выбран</span>
-                </button>
-                <ul class="dropdown__list">
-                  <li class="dropdown__list-item" data-value="item1">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item2">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item3">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item4">Аналитика</li>
-                  <li class="dropdown__list-item" data-value="item5">Аналитика</li>
-                </ul>
-                <input class="dropdown__input-hidden" type="text" name="selet-category" value="">
-              </div>
-            </div>
-            <div class="form-group">
-              <label>
-                <input class="real-checkbox" type="checkbox" name="filter1">
-                <span class="custom-checkbox"> </span>
-                <span class="checkbox-text">Фильтр</span>
-              </label>
-            </div>
-            <div class="form-group">
-              <label>
-                <input class="real-checkbox" type="checkbox" name="filter2">
-                <span class="custom-checkbox"> </span>
-                <span class="checkbox-text">Фильтр</span>
-              </label>
-            </div>
-            <button class="btn btn--reset js-reset" type="reset">Cбросить фильтры </button>
-          </form>
-          <div class="articles-list js-group">
-            <!-- article-->
-            <a class="article-card" href="article-inner.html">
-              <h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
-              <div class="article-card-labels">
-                <div class="article-card__label">Paбота в ИТ</div>
-              </div>
-            </a>
-            <!-- article-->
-            <a class="article-card" href="article-inner.html">
-              <h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
-              <div class="article-card-labels">
-                <div class="article-card__label">Paбота в ИТ</div>
-              </div>
-            </a>
-            <!-- article-->
-            <a class="article-card" href="article-inner.html">
-              <h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
-              <div class="article-card-labels">
-                <div class="article-card__label">Paбота в ИТ</div>
-              </div>
-            </a>
-            <!-- article-->
-            <a class="article-card" href="article-inner.html">
-              <h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
-              <div class="article-card-labels">
-                <div class="article-card__label">Paбота в ИТ</div>
-              </div>
-            </a>
-            <!-- article-->
-            <a class="article-card" href="article-inner.html">
-              <h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
-              <div class="article-card-labels">
-                <div class="article-card__label">Paбота в ИТ</div>
-              </div>
-            </a>
-            <!-- article-->
-            <a class="article-card" href="article-inner.html">
-              <h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
-              <div class="article-card-labels">
-                <div class="article-card__label">Paбота в ИТ</div>
-              </div>
-            </a>
-            <!-- article-->
-            <a class="article-card" href="article-inner.html">
-              <h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
-              <div class="article-card-labels">
-                <div class="article-card__label">Paбота в ИТ</div>
-              </div>
-            </a>
-            <!-- article-->
-            <a class="article-card" href="article-inner.html">
-              <h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
-              <div class="article-card-labels">
-                <div class="article-card__label">Paбота в ИТ</div>
-              </div>
-            </a>
-            <!--hidden block-->
-            <div class="article-cards-hide js-btn-target">
-              <!-- article-->
-              <a class="article-card" href="article-inner.html">
-                <h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
-                <div class="article-card-labels">
-                  <div class="article-card__label">Paбота в ИТ</div>
-                </div>
-              </a>
-              <!-- article-->
-              <a class="article-card" href="article-inner.html">
-                <h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
-                <div class="article-card-labels">
-                  <div class="article-card__label">Paбота в ИТ</div>
-                </div>
-              </a>
-              <!-- article-->
-              <a class="article-card" href="article-inner.html">
-                <h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
-                <div class="article-card-labels">
-                  <div class="article-card__label">Paбота в ИТ</div>
-                </div>
-              </a>
-            </div>
-            <button class="btn-show-more js-btn-show" type="button">Показать еще</button>
-          </div>
-        </div>
-        <a class="btn-icon-mob" href="#!">Все статьи<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff" />
-          </svg>
-        </a>
-      </div>
-      <!--modal-->
-      <div class="fade-block hidden" data-modal id="modal-filters">
-        <div class="modal-window">
-          <div class="filters-mob">
-            <div class="filters-mob-top">
-              <div class="filters-mob__title">Фильтры</div>
-              <button class="close-btn" id="btn-close-filters" data-modal-close>
-                <svg class="svg-close">
-                  <use href="./img/spriteSvg.svg#svg-close"></use>
-                </svg>
-              </button>
-            </div>
-            <form class="articles-form custom-form-mob js-form">
-              <label class="form-group-title">Cтатус</label>
-              <div class="form-group">
-                <div class="dropdown">
-                  <button class="dropdown__button js-btn" type="button" id="dropdown-btn-mob">
-                    <span>Не выбран</span>
-                  </button>
-                  <ul class="dropdown__list">
-                    <li class="dropdown__list-item" data-value="item1">Аналитика</li>
-                    <li class="dropdown__list-item" data-value="item2">Аналитика</li>
-                    <li class="dropdown__list-item" data-value="item3">Аналитика</li>
-                    <li class="dropdown__list-item" data-value="item4">Аналитика</li>
-                    <li class="dropdown__list-item" data-value="item5">Аналитика</li>
-                  </ul>
-                  <input class="dropdown__input-hidden" type="text" name="selet-category" value="">
-                </div>
-              </div>
-              <label class="form-group-title">Отрасль науки</label>
-              <div class="form-group">
-                <div class="dropdown">
-                  <button class="dropdown__button js-btn" type="button">
-                    <span>Не выбран</span>
-                  </button>
-                  <ul class="dropdown__list">
-                    <li class="dropdown__list-item" data-value="item1">Аналитика</li>
-                    <li class="dropdown__list-item" data-value="item2">Аналитика</li>
-                    <li class="dropdown__list-item" data-value="item3">Аналитика</li>
-                    <li class="dropdown__list-item" data-value="item4">Аналитика</li>
-                    <li class="dropdown__list-item" data-value="item5">Аналитика</li>
-                  </ul>
-                  <input class="dropdown__input-hidden" type="text" name="selet-category" value="">
-                </div>
-              </div>
-              <label class="form-group-title">Группа специальностей</label>
-              <div class="form-group">
-                <div class="dropdown">
-                  <button class="dropdown__button js-btn" type="button">
-                    <span>Не выбран</span>
-                  </button>
-                  <ul class="dropdown__list">
-                    <li class="dropdown__list-item" data-value="item1">Аналитика</li>
-                    <li class="dropdown__list-item" data-value="item2">Аналитика</li>
-                    <li class="dropdown__list-item" data-value="item3">Аналитика</li>
-                    <li class="dropdown__list-item" data-value="item4">Аналитика</li>
-                    <li class="dropdown__list-item" data-value="item5">Аналитика</li>
-                  </ul>
-                  <input class="dropdown__input-hidden" type="text" name="selet-category" value="">
-                </div>
-              </div>
-              <label class="form-group-title">Фильтр</label>
-              <div class="form-group">
-                <div class="dropdown">
-                  <button class="dropdown__button js-btn" type="button">
-                    <span>Не выбран</span>
-                  </button>
-                  <ul class="dropdown__list">
-                    <li class="dropdown__list-item" data-value="item1">Аналитика</li>
-                    <li class="dropdown__list-item" data-value="item2">Аналитика</li>
-                    <li class="dropdown__list-item" data-value="item3">Аналитика</li>
-                    <li class="dropdown__list-item" data-value="item4">Аналитика</li>
-                    <li class="dropdown__list-item" data-value="item5">Аналитика</li>
-                  </ul>
-                  <input class="dropdown__input-hidden" type="text" name="selet-category" value="">
-                </div>
-              </div>
-              <div class="form-group">
-                <label>
-                  <input class="real-checkbox" type="checkbox" name="filter1">
-                  <span class="custom-checkbox"> </span>
-                  <span class="checkbox-text">Фильтр</span>
-                </label>
-              </div>
-              <div class="form-group">
-                <label>
-                  <input class="real-checkbox" type="checkbox" name="filter2">
-                  <span class="custom-checkbox"> </span>
-                  <span class="checkbox-text">Фильтр</span>
-                </label>
-              </div>
-              <button class="btn">Применить</button>
-              <button class="btn-reset-mob js-reset" type="reset">Cбросить фильтр </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="board">
-      <div class="container">
-        <div class="title-group">
-          <p class="back-title">Эксперты</p>
-          <h2 class="section-title">Координационный совет</h2>
-          <a class="btn-icon" href="team-inner.html">Все члены совета<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff" />
-            </svg>
-          </a>
-        </div>
-        <!-- persons - slider -->
-        <div class="swiper persons-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <!-- person - card-->
-              <a class="person-card" href="person.html">
-                <div class="person-card__img"></div>
-                <div class="person-card-row">
-                  <div class="person-card__label">Работа в ИТ</div>
-                </div>
-                <h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
-                <p class="person-card__position">Руководитель практики решение вопросов</p>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <!-- person - card-->
-              <a class="person-card" href="person.html">
-                <div class="person-card__img"></div>
-                <div class="person-card-row">
-                  <div class="person-card__label">Работа в ИТ</div>
-                </div>
-                <h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
-                <p class="person-card__position">Руководитель практики решение вопросов</p>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <!-- person - card-->
-              <a class="person-card" href="person.html">
-                <div class="person-card__img"></div>
-                <div class="person-card-row">
-                  <div class="person-card__label">Работа в ИТ</div>
-                </div>
-                <h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
-                <p class="person-card__position">Руководитель практики решение вопросов</p>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <!-- person - card-->
-              <a class="person-card" href="person.html">
-                <div class="person-card__img"></div>
-                <div class="person-card-row">
-                  <div class="person-card__label">Работа в ИТ</div>
-                </div>
-                <h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
-                <p class="person-card__position">Руководитель практики решение вопросов</p>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <!-- person - card-->
-              <a class="person-card" href="person.html">
-                <div class="person-card__img"></div>
-                <div class="person-card-row">
-                  <div class="person-card__label">Работа в ИТ</div>
-                </div>
-                <h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
-                <p class="person-card__position">Руководитель практики решение вопросов</p>
-              </a>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-        <a class="btn-icon-mob" href="team-inner.html">Все члены совета<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff" />
-          </svg>
-        </a>
-        <div class="pagination-wrapper">
-          <div class="pagination__divider"> </div>
-          <div class="pagination">
-            <a class="pagination__link pagination-prev" href="#!">
-              <svg class="svg-prev">
-                <use href="./img/spriteSvg.svg#svg-prev"></use>
-              </svg>
-            </a>
-            <div class="pagination__link-active">1</div>
-            <a class="pagination__link" href="#!">2</a>
-            <div class="pagination__ellipsis">... </div>
-            <a class="pagination__link" href="#!">8</a>
-            <a class="pagination__link pagination-next" href="#!">
-              <svg class="svg-next">
-                <use href="./img/spriteSvg.svg#svg-next"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="cases">
-      <div class="container container-cases">
-        <div class="title-group">
-          <p class="back-title">Результаты работы</p>
-          <h2 class="section-title">Кейсы</h2>
-          <a class="btn-icon" href="cases.html">Все кейсы<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff" />
-            </svg>
-          </a>
-        </div>
-        <div class="swiper cases-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <!-- cases - card-->
-              <div class="cases-card">
-                <div class="cases-card__video">
-                  <button class="start-video__btn">
-                    <svg class="svg-play">
-                      <use href="./img/spriteSvg.svg#svg-play"></use>
-                    </svg>
-                    <svg class="svg-play-border">
-                      <circle cx="25" cy="25" r="22" fill="transparent"></circle>
-                    </svg>
-                  </button>
-                </div>
-                <div class="cases-card-desc">
-                  <h3 class="cases-card__title">Almost 60% of searches originate from mobile version </h3>
-                  <div class="cases-card__text">
-                    <p>There are com find which have clauses that claim if you leave in the middle of the estimate you will be charged extra. But that's not the case with us. We don't take any extra charge for our website development. Once the website redesign is ready it's all yours. You have full ownership of the website redesign.There are companies you will find which have clauses that claim if you leave in the middle of the estimate you will be charged extra. But that's not the case with us. We don't take</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <!-- cases - card-->
-              <div class="cases-card">
-                <div class="cases-card__video">
-                  <button class="start-video__btn">
-                    <svg class="svg-play">
-                      <use href="./img/spriteSvg.svg#svg-play"></use>
-                    </svg>
-                    <svg class="svg-play-border">
-                      <circle cx="25" cy="25" r="22" fill="transparent"></circle>
-                    </svg>
-                  </button>
-                </div>
-                <div class="cases-card-desc">
-                  <h3 class="cases-card__title">Almost 60% of searches originate from mobile version </h3>
-                  <div class="cases-card__text">
-                    <p>There are com find which have clauses that claim if you leave in the middle of the estimate you will be charged extra. But that's not the case with us. We don't take any extra charge for our website development. Once the website redesign is ready it's all yours. You have full ownership of the website redesign.There are companies you will find which have clauses that claim if you leave in the middle of the estimate you will be charged extra. But that's not the case with us. We don't take</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <!-- cases - card-->
-              <div class="cases-card">
-                <div class="cases-card__video">
-                  <button class="start-video__btn">
-                    <svg class="svg-play">
-                      <use href="./img/spriteSvg.svg#svg-play"></use>
-                    </svg>
-                    <svg class="svg-play-border">
-                      <circle cx="25" cy="25" r="22" fill="transparent"></circle>
-                    </svg>
-                  </button>
-                </div>
-                <div class="cases-card-desc">
-                  <h3 class="cases-card__title">Almost 60% of searches originate from mobile version </h3>
-                  <div class="cases-card__text">
-                    <p>There are com find which have clauses that claim if you leave in the middle of the estimate you will be charged extra. But that's not the case with us. We don't take any extra charge for our website development. Once the website redesign is ready it's all yours. You have full ownership of the website redesign.There are companies you will find which have clauses that claim if you leave in the middle of the estimate you will be charged extra. But that's not the case with us. We don't take</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="program-slider-group center">
-            <div class="program-slider-controls cases-controls">
-              <button class="program-slider-prev prevXl">
-                <svg class="svg-prev">
-                  <use href="./img/spriteSvg.svg#svg-prev"></use>
-                </svg>
-              </button>
-              <button class="program-slider-next nextXl">
-                <svg class="svg-next">
-                  <use href="./img/spriteSvg.svg#svg-next"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-        <a class="btn-icon-mob" href="cases.html">Все кейсы<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff" />
-          </svg>
-        </a>
-      </div>
-    </section>
-    <section class="news">
-      <div class="container">
-        <div class="title-group">
-          <p class="back-title">События</p>
-          <h2 class="section-title">Новости</h2>
-          <a class="btn-icon" href="all-news.html">Все новости<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff" />
-            </svg>
-          </a>
-        </div>
-        <ul class="list-group">
-          <li class="list-group-item active" data-tab="tab-1">Лента</li>
-          <li class="list-group-item" data-tab="tab-2">Новости</li>
-          <li class="list-group-item" data-tab="tab-3">СМИ</li>
-          <li class="list-group-item" data-tab="tab-4">Мероприятия</li>
-          <li class="list-group-item" data-tab="tab-5">Видео</li>
-        </ul>
-        <div class="card" data-tab-content id="tab-1">
-          <div class="swiper news-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <!-- article - card-->
-                <a class="news-card" href="article-inner.html">
-                  <div class="news-card__img"> </div>
-                  <h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
-                  <p class="news-card__info">28.09.2023 /<span> Обучение /</span>
-                    <span> Обучение</span>
-                  </p>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <!-- article - card-->
-                <a class="news-card" href="article-inner.html">
-                  <div class="news-card__img"> </div>
-                  <h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
-                  <p class="news-card__info">28.09.2023 /<span> Обучение /</span>
-                    <span> Обучение</span>
-                  </p>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <!-- article - card-->
-                <a class="news-card" href="article-inner.html">
-                  <div class="news-card__img"> </div>
-                  <h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever Lorem Ipsum has been the industry's standard dummy text ever</h4>
-                  <p class="news-card__info">28.09.2023 /<span> Обучение /</span>
-                    <span> Обучение</span>
-                  </p>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <!-- article - card-->
-                <a class="news-card" href="article-inner.html">
-                  <div class="news-card__img"> </div>
-                  <h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
-                  <p class="news-card__info">28.09.2023 /<span> Обучение /</span>
-                    <span> Обучение</span>
-                  </p>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-          <a class="btn-icon-mob" href="all-news.html">Все новости<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff" />
-            </svg>
-          </a>
-          <div class="pagination-wrapper">
-            <div class="pagination__divider"> </div>
-            <div class="pagination">
-              <a class="pagination__link pagination-prev" href="#!">
-                <svg class="svg-prev">
-                  <use href="./img/spriteSvg.svg#svg-prev"></use>
-                </svg>
-              </a>
-              <div class="pagination__link-active">1</div>
-              <a class="pagination__link" href="#!">2</a>
-              <div class="pagination__ellipsis">... </div>
-              <a class="pagination__link" href="#!">8</a>
-              <a class="pagination__link pagination-next" href="#!">
-                <svg class="svg-next">
-                  <use href="./img/spriteSvg.svg#svg-next"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="card hidden" data-tab-content id="tab-2">
-          <!-- article - card-->
-          <a class="news-card" href="article-inner.html">
-            <div class="news-card__img"> </div>
-            <h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
-            <p class="news-card__info">28.09.2023 /<span> Обучение /</span>
-              <span> Обучение</span>
-            </p>
-          </a>
-        </div>
-        <div class="card hidden" data-tab-content id="tab-3">
-          <!-- article - card-->
-          <a class="news-card" href="article-inner.html">
-            <div class="news-card__img"> </div>
-            <h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
-            <p class="news-card__info">28.09.2023 /<span> Обучение /</span>
-              <span> Обучение</span>
-            </p>
-          </a>
-        </div>
-        <div class="card hidden" data-tab-content id="tab-4">
-          <!-- article - card-->
-          <a class="news-card" href="article-inner.html">
-            <div class="news-card__img"> </div>
-            <h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
-            <p class="news-card__info">28.09.2023 /<span> Обучение /</span>
-              <span> Обучение</span>
-            </p>
-          </a>
-        </div>
-        <div class="card hidden" data-tab-content id="tab-5">
-          <!-- article - card-->
-          <a class="news-card" href="article-inner.html">
-            <div class="news-card__img"> </div>
-            <h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
-            <p class="news-card__info">28.09.2023 /<span> Обучение /</span>
-              <span> Обучение</span>
-            </p>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="team">
-      <div class="container">
-        <div class="title-group">
-          <p class="back-title">Профессионалы</p>
-          <h2 class="section-title">Команда</h2>
-          <a class="btn-icon" href="team-inner.html">Вся команда<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff" />
-            </svg>
-          </a>
-        </div>
-        <!-- persons - slider -->
-        <div class="swiper persons-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <!-- person - card-->
-              <a class="person-card" href="person.html">
-                <div class="person-card__img"></div>
-                <div class="person-card-row">
-                  <div class="person-card__label">Работа в ИТ</div>
-                </div>
-                <h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
-                <p class="person-card__position">Руководитель практики решение вопросов</p>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <!-- person - card-->
-              <a class="person-card" href="person.html">
-                <div class="person-card__img"></div>
-                <div class="person-card-row">
-                  <div class="person-card__label">Работа в ИТ</div>
-                </div>
-                <h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
-                <p class="person-card__position">Руководитель практики решение вопросов</p>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <!-- person - card-->
-              <a class="person-card" href="person.html">
-                <div class="person-card__img"></div>
-                <div class="person-card-row">
-                  <div class="person-card__label">Работа в ИТ</div>
-                </div>
-                <h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
-                <p class="person-card__position">Руководитель практики решение вопросов</p>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <!-- person - card-->
-              <a class="person-card" href="person.html">
-                <div class="person-card__img"></div>
-                <div class="person-card-row">
-                  <div class="person-card__label">Работа в ИТ</div>
-                </div>
-                <h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
-                <p class="person-card__position">Руководитель практики решение вопросов</p>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <!-- person - card-->
-              <a class="person-card" href="person.html">
-                <div class="person-card__img"></div>
-                <div class="person-card-row">
-                  <div class="person-card__label">Работа в ИТ</div>
-                </div>
-                <h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
-                <p class="person-card__position">Руководитель практики решение вопросов</p>
-              </a>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-        <a class="btn-icon-mob" href="team-inner.html">Вся команда<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff" />
-          </svg>
-        </a>
-        <div class="pagination-wrapper">
-          <div class="pagination__divider"> </div>
-          <div class="pagination">
-            <a class="pagination__link pagination-prev" href="#!">
-              <svg class="svg-prev">
-                <use href="./img/spriteSvg.svg#svg-prev"></use>
-              </svg>
-            </a>
-            <div class="pagination__link-active">1</div>
-            <a class="pagination__link" href="#!">2</a>
-            <div class="pagination__ellipsis">... </div>
-            <a class="pagination__link" href="#!">8</a>
-            <a class="pagination__link pagination-next" href="#!">
-              <svg class="svg-next">
-                <use href="./img/spriteSvg.svg#svg-next"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="partners">
-      <div class="container">
-        <div class="title-group">
-          <p class="back-title">С кем мы работаем</p>
-          <h2 class="section-title">Партнеры</h2>
-        </div>
-        <!-- partners - slider-->
-        <div class="swiper partners-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./img/partners/01.webp" alt="logo">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/partners/02.webp" alt="logo">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/partners/03.webp" alt="logo">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/partners/04.webp" alt="logo">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/partners/05.webp" alt="logo">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/partners/01.webp" alt="logo">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/partners/02.webp" alt="logo">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/partners/03.webp" alt="logo">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/partners/04.webp" alt="logo">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/partners/05.webp" alt="logo">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__logo">
-        <p>Центр защиты бизнеса</p>
-      </div>
-      <div class="footer-content">
-        <div class="footer__contacts">
-          <a class="footer__contacts-tel" href="tel:89994442211">+7 (999) 444 22 11</a>
-          <a class="footer__contacts-mail" href="mailto:mail@mail.ru">mail@mail.ru</a>
-          <div class="footer__contacts-copyright">
-            <p>&copy; АНО Центр защиты бизнеса 2023</p>
-          </div>
-        </div>
-        <div class="footer__social">
-          <div class="footer__social-text">
-            <p>Следите за нашими соц сетями:</p>
-          </div>
-          <!-- social-icons-->
-          <div class="social-icons-fill">
-            <a class="social-icons-fill-item" href="#!">
-              <svg class="svg-tg-fill">
-                <use href="./img/spriteSvg.svg#svg-tg-fill"></use>
-              </svg>
-            </a>
-            <a class="social-icons-fill-item" href="#!">
-              <svg class="svg-vk-fill">
-                <use href="./img/spriteSvg.svg#svg-vk-fill"></use>
-              </svg>
-            </a>
-            <a class="social-icons-fill-item" href="#!">
-              <svg class="svg-ok-fill">
-                <use href="./img/spriteSvg.svg#svg-ok-fill"></use>
-              </svg>
-            </a>
-            <a class="social-icons-fill-item" href="#!">
-              <svg class="svg-youtube-fill">
-                <use href="./img/spriteSvg.svg#svg-youtube-fill"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="footer__widgets">
-          <ul class="footer-widget">
-            <li>
-              <a class="footer-widgets__link" href="all-programs.html">Программы</a>
-            </li>
-            <li>
-              <a class="footer-widgets__link" href="services-page.html">Сервисы</a>
-            </li>
-            <li>
-              <a class="footer-widgets__link" href="articles.html">Cтатьи</a>
-            </li>
-          </ul>
-          <ul class="footer-widget">
-            <li>
-              <a class="footer-widgets__link" href="about-us.html">СМИ о нас </a>
-            </li>
-            <li>
-              <a class="footer-widgets__link" href="all-news.html">Новости</a>
-            </li>
-            <li>
-              <a class="footer-widgets__link" href="cases.html">Кейсы</a>
-            </li>
-          </ul>
-          <ul class="footer-widget">
-            <li>
-              <a class="footer-widgets__link" href="#!">Партнеры</a>
-            </li>
-            <li>
-              <a class="footer-widgets__link" href="team-inner.html">Команда</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__contacts-copyright-mob">
-        <p>&copy; АНО Центр защиты бизнеса 2023</p>
-      </div>
-    </div>
-  </footer>
-  <script src="libs/swiper.js"></script>
-  <script src="libs/swiper-bundle.min.js.map"></script>
-  <script src="js/toggleMenu.js"></script>
-  <script src="js/tabs.js"></script>
-  <script src="js/select.js"></script>
-  <script src="js/SwiperAdder.js"></script>
-  <script src="js/modal.js"></script>
-  <script src="js/expand.js"></script>
-  <script src="js/accordeon.js"></script>
-  <script src="js/filter.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="libs/swiper.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<title>Главная</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container container-header"> 
+				<div class="header-content"> 
+					<div class="header__logo"><a class="logo-img" href="index.html"><img src="./img/logo.webp" alt="logo"></a><a class="logo-text" href="index.html">АНО Центр защиты бизнеса</a></div>
+					<div class="header-info"> 
+						<div class="social-icons"><a class="social-icons__item" href="#!"><svg width="44.000000" height="38.000244" viewBox="0 0 44 38.0002" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path id="Vector" d="M1 16L13 22L31 10L19 25L37 37L43 1L1 16Z" stroke="currentColor" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/></svg></a><a class="social-icons__item" href="#!"><svg width="45.000000" height="45.000000" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="45.000000" height="45.000000" fill="#FFFFFF" fill-opacity="0"/>
+<path d="M6.29883 19.8267C7.07227 15.7583 9.30273 12.1121 12.5742 9.57251C15.8447 7.03271 19.9307 5.77441 24.0635 6.0332C28.1963 6.29224 32.0928 8.05103 35.0205 10.9792C37.9492 13.9075 39.708 17.8037 39.9668 21.9368C40.2256 26.0696 38.9668 30.155 36.4277 33.426C33.8877 36.6968 30.2412 38.9282 26.1729 39.7012C22.1045 40.4741 17.8945 39.7356 14.332 37.624L8.44629 39.2905C8.20605 39.3611 7.9502 39.3652 7.70703 39.303C7.46289 39.2407 7.24121 39.1143 7.06348 38.9365C6.88574 38.759 6.75879 38.5369 6.69727 38.2935C6.63477 38.05 6.63867 37.7944 6.70996 37.5532L8.37598 31.668C6.26465 28.1055 5.52539 23.895 6.29883 19.8267Z" stroke="currentColor" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+<path d="M21.6934 30.9368C19.9814 30.2302 18.4268 29.1924 17.1172 27.8831C15.8076 26.5735 14.7695 25.0183 14.0635 23.3064C13.3564 21.5947 12.9951 19.7603 13 17.9084C13.0049 16.605 13.5254 15.3564 14.4492 14.4365C15.3721 13.5166 16.623 13 17.9258 13C18.1406 12.9983 18.3525 13.0547 18.5381 13.1628C18.7236 13.2712 18.877 13.4277 18.9814 13.6157L21.04 17.2046C21.1621 17.4229 21.2246 17.6694 21.2217 17.9194C21.2188 18.1697 21.1504 18.4146 21.0225 18.6296L19.3682 21.3916C20.2158 23.2759 21.7236 24.7844 23.6084 25.6313L26.3701 23.9778C26.585 23.8501 26.8301 23.7812 27.0801 23.7781C27.3311 23.7749 27.5771 23.8379 27.7949 23.9602L31.3838 26.0186C31.5723 26.1228 31.7285 26.2759 31.8369 26.4617C31.9453 26.6475 32.002 26.8589 32 27.074C31.9951 28.376 31.4775 29.6235 30.5586 30.5459C29.6396 31.4683 28.3936 31.9907 27.0918 32C25.2402 32.0046 23.4053 31.6433 21.6934 30.9368Z" stroke="currentColor" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/></svg></a></div><a class="contact-phone" href="tel:89994442211">+7 (999) 444 22 11</a>
+						<button class="menu-toggle"><span></span></button>
+					</div>
+					<div class="mob-info">
+						<div class="social-icons-mob"><a class="social-icons-mob__item" href="#!"><svg width="24" height="20" viewBox="0 0 19 17.9998" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path id="Vector" d="M14.6377 10.0813L14.6123 10.0723Q14.3848 9.99194 14.2305 9.95679Q13.9297 9.88818 13.6572 9.91895Q13.4512 9.94214 13.2656 10.0168Q12.833 10.1917 12.5137 10.6479Q12.3389 10.9092 11.877 11.4812Q11.6221 11.7981 11.4258 12.0317Q11.3574 12.0012 11.2627 11.9597Q10.5859 11.665 10.0986 11.3804Q9.21777 10.866 8.41211 10.1372Q7.33984 9.16797 6.40918 7.65454Q6.55762 7.48999 6.79395 7.20117Q6.9248 7.04004 6.98438 6.97021Q7.16504 6.75659 7.30371 6.52075Q7.38184 6.38745 7.50684 6.13135Q7.52832 6.0874 7.54004 6.06494L7.54492 6.05444L7.5498 6.0437Q7.69922 5.72266 7.71777 5.39404Q7.74414 4.92651 7.50586 4.44385Q7.45215 4.3335 6.98242 3.17871Q6.54102 2.09204 6.25586 1.3689Q5.93164 0.581543 5.41211 0.25293Q5.29785 0.180664 5.1748 0.129395Q5.01465 0.0629883 4.84082 0.0319824Q4.69141 0.00537109 4.4834 0.00292969Q4.44824 0.00244141 4.44629 0.00219727L4.41309 0L3.56836 0Q3.44238 0 3.31738 0.0134277Q2.98926 0.0490723 2.6709 0.178711Q2.55664 0.225586 2.44727 0.283203Q2.04102 0.496826 1.71289 0.858643Q1.6748 0.901611 1.61133 0.972412Q1.33594 1.27832 1.16406 1.50537Q0.850586 1.91724 0.624023 2.36157Q0.541992 2.52246 0.470703 2.68799Q0 3.78003 0 5.07471Q0 6.62646 0.875977 8.38086Q1.03906 8.70728 1.22266 9.02197Q1.5293 9.54663 1.89258 10.0381Q1.90039 10.0505 1.91895 10.0779Q2.94336 11.595 4.22559 12.9463Q5.33008 14.1118 6.50195 15.009Q7.95508 16.1221 9.45312 16.7766Q10.6152 17.2957 11.9395 17.7058Q12.7373 17.9663 13.6211 17.9961Q14.2627 18.0178 15.0107 17.9119Q15.4551 17.8464 15.998 17.6155Q16.5186 17.3943 17.0049 17.0771Q17.5547 16.719 17.9453 16.311Q18.4482 15.7864 18.6396 15.2239Q18.9219 14.4331 18.9854 13.6724Q19.0576 12.7974 18.7764 12.3496Q18.5869 12.0479 18.2402 11.8367Q18.0996 11.7507 17.79 11.6057Q17.6494 11.54 17.5723 11.5029Q17.4717 11.4536 17.0215 11.2314Q14.9736 10.2205 14.6631 10.0916L14.6377 10.0813ZM2.70605 9.45752C2.90918 9.74854 5.66309 14.0286 9.85352 15.8604C10.8496 16.3054 11.627 16.5623 12.2354 16.7507C13.2324 17.0759 14.1445 17.0247 14.8711 16.9219C15.6826 16.802 17.3545 15.8945 17.6924 14.9016C18.0479 13.9087 18.0479 13.0698 17.9297 12.8813C17.8105 12.6931 17.5576 12.6074 17.1348 12.4021C16.7129 12.1965 14.6514 11.1694 14.2803 11.0154C13.8916 10.8784 13.6211 10.8098 13.334 11.2207C13.0469 11.6487 12.252 12.6074 12.0156 12.8813C11.7793 13.1726 11.5264 13.2068 11.1035 12.9841C10.6807 12.7788 9.3291 12.3164 7.74121 10.8784C6.49121 9.74854 5.66309 8.36182 5.41016 7.93359C5.17285 7.50562 5.37598 7.2832 5.5957 7.06055C5.78125 6.87231 6.01758 6.56396 6.2207 6.32446C6.42383 6.08472 6.50781 5.89648 6.64355 5.62256C6.77832 5.33154 6.71094 5.0918 6.60938 4.88623C6.50781 4.68091 5.66309 2.59229 5.3252 1.73608C5.02637 1.00952 4.71484 1.00562 4.4707 1.00269C4.43945 1.00244 4.4082 1.00195 4.37891 1L3.56836 1C3.28125 1 2.8418 1.10278 2.45312 1.53076C2.08105 1.95874 1 2.98584 1 5.07471C1 7.16333 2.50391 9.18359 2.70605 9.45752Z" fill="currentColor" fill-opacity="1.000000" fill-rule="evenodd"/></svg></a><a class="social-icons-mob__item icon-divider" href="#!"><svg width="24" height="24" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="45.000000" height="45.000000" fill="#FFFFFF" fill-opacity="0"/>
+<path d="M6.29883 19.8267C7.07227 15.7583 9.30273 12.1121 12.5742 9.57251C15.8447 7.03271 19.9307 5.77441 24.0635 6.0332C28.1963 6.29224 32.0928 8.05103 35.0205 10.9792C37.9492 13.9075 39.708 17.8037 39.9668 21.9368C40.2256 26.0696 38.9668 30.155 36.4277 33.426C33.8877 36.6968 30.2412 38.9282 26.1729 39.7012C22.1045 40.4741 17.8945 39.7356 14.332 37.624L8.44629 39.2905C8.20605 39.3611 7.9502 39.3652 7.70703 39.303C7.46289 39.2407 7.24121 39.1143 7.06348 38.9365C6.88574 38.759 6.75879 38.5369 6.69727 38.2935C6.63477 38.05 6.63867 37.7944 6.70996 37.5532L8.37598 31.668C6.26465 28.1055 5.52539 23.895 6.29883 19.8267Z" stroke="currentColor" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+<path d="M21.6934 30.9368C19.9814 30.2302 18.4268 29.1924 17.1172 27.8831C15.8076 26.5735 14.7695 25.0183 14.0635 23.3064C13.3564 21.5947 12.9951 19.7603 13 17.9084C13.0049 16.605 13.5254 15.3564 14.4492 14.4365C15.3721 13.5166 16.623 13 17.9258 13C18.1406 12.9983 18.3525 13.0547 18.5381 13.1628C18.7236 13.2712 18.877 13.4277 18.9814 13.6157L21.04 17.2046C21.1621 17.4229 21.2246 17.6694 21.2217 17.9194C21.2188 18.1697 21.1504 18.4146 21.0225 18.6296L19.3682 21.3916C20.2158 23.2759 21.7236 24.7844 23.6084 25.6313L26.3701 23.9778C26.585 23.8501 26.8301 23.7812 27.0801 23.7781C27.3311 23.7749 27.5771 23.8379 27.7949 23.9602L31.3838 26.0186C31.5723 26.1228 31.7285 26.2759 31.8369 26.4617C31.9453 26.6475 32.002 26.8589 32 27.074C31.9951 28.376 31.4775 29.6235 30.5586 30.5459C29.6396 31.4683 28.3936 31.9907 27.0918 32C25.2402 32.0046 23.4053 31.6433 21.6934 30.9368Z" stroke="currentColor" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/></svg></a><a class="social-icons-mob__item" href="#!"><svg width="24" height="24" viewBox="0 0 44 38.0002" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path id="Vector" d="M1 16L13 22L31 10L19 25L37 37L43 1L1 16Z" stroke="currentColor" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/></svg></a></div>
+						<button class="menu-toggle"><span></span></button>
+					</div>
+					<div class="aside-menu-wrapper">
+						<!-- aside-menu-->
+						<div class="aside-menu">
+							<div class="aside-menu-top">
+								<div class="aside-menu__logo"> <a class="menu-logo-img" href="#!"><img src="./img/logo.webp" alt="logo"></a><a class="menu-logo-text" href="#!">АНО Центр защиты бизнеса  </a></div>
+								<div class="aside-menu__social"><a class="aside-menu__social-item" href="#!"><img src="./img/socials/whatsapp.svg" alt="whatsapp"><span>WhatsApp</span></a><a class="aside-menu__social-item" href="#!"><img src="./img/socials/tg.svg" alt="telegram"><span>Telegram</span></a></div><a class="aside-menu-tel" href="tel:89998889090">+7 999 888 90 09   </a>
+							</div>
+							<ul class="nav__list">
+								<li><a href="index.html">Главная</a></li>
+								<li><a href="about-us.html">О нас</a></li>
+								<li><a href="all-programs.html">Образовательные программы</a></li>
+								<li><a href="services-page.html">Сервисы</a></li>
+								<li><a href="articles.html">Статьи</a></li>
+								<li><a href="team-inner.html">Команда</a></li>
+								<li><a href="cases.html">Кейсы</a></li>
+								<li><a href="all-news.html">Новости</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="header-banner">
+				<div class="container">
+					<div class="header-banner-content"> 
+						<div class="header-banner__title">
+							<h1 class="headline">АНО Центр защиты бизнеса</h1>
+						</div>
+						<div class="header-banner__text">
+							<p>Body Extra Large. Most fonts have a particular weight which corresponds to one of the numbers in Common weight name mapping. However some fonts, called variable fonts, can support a range of weights with a more.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="programs">
+				<div class="container"> 
+					<div class="title-group">
+						<p class="back-title">Чему мы обучаем</p>
+						<h2 class="section-title">Образовательные программы</h2><a class="btn-icon" href="all-programs.html">Все программы<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff"/>
+</svg></a>
+					</div>
+					<!-- programs - slider-->
+					<div class="swiper programs-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<!-- program-card--><a class="program-card" href="program.html">
+									<h3 class="program-card__title">Название направления</h3>
+									<p class="program-card__text">We provide constant monitoring and repairing services to make your site active 24/7. We provide constant monitoring and repairing services to make your site active 24/7.</p>
+									<div class="program-card__link"><span>Подробнее</span>
+										<svg class="svg-arrow-right">
+											<use href="./img/spriteSvg.svg#svg-arrow-right"></use>
+										</svg>
+									</div></a>
+								<!-- program-card--><a class="program-card" href="program.html">
+									<h3 class="program-card__title">Название направления</h3>
+									<p class="program-card__text">We provide constant monitoring and repairing services to make your site active 24/7.</p>
+									<div class="program-card__link"><span>Подробнее</span>
+										<svg class="svg-arrow-right">
+											<use href="./img/spriteSvg.svg#svg-arrow-right"></use>
+										</svg>
+									</div></a>
+							</div>
+							<div class="swiper-slide">
+								<!-- program-card--><a class="program-card" href="program.html">
+									<h3 class="program-card__title">Название направления</h3>
+									<p class="program-card__text">We provide constant monitoring and repairing services to make your site active 24/7.</p>
+									<div class="program-card__link"><span>Подробнее</span>
+										<svg class="svg-arrow-right">
+											<use href="./img/spriteSvg.svg#svg-arrow-right"></use>
+										</svg>
+									</div></a>
+								<!-- program-card--><a class="program-card" href="program.html">
+									<h3 class="program-card__title">Название направления</h3>
+									<p class="program-card__text">We provide constant monitoring and repairing services to make your site active 24/7.</p>
+									<div class="program-card__link"><span>Подробнее</span>
+										<svg class="svg-arrow-right">
+											<use href="./img/spriteSvg.svg#svg-arrow-right"></use>
+										</svg>
+									</div></a>
+							</div>
+							<div class="swiper-slide">
+								<!-- program-card--><a class="program-card" href="program.html">
+									<h3 class="program-card__title">Название направления</h3>
+									<p class="program-card__text">We provide constant monitoring and repairing services to make your site active 24/7.</p>
+									<div class="program-card__link"><span>Подробнее</span>
+										<svg class="svg-arrow-right">
+											<use href="./img/spriteSvg.svg#svg-arrow-right"></use>
+										</svg>
+									</div></a>
+								<!-- program-card--><a class="program-card" href="program.html">
+									<h3 class="program-card__title">Название направления</h3>
+									<p class="program-card__text">We provide constant monitoring and repairing services to make your site active 24/7.</p>
+									<div class="program-card__link"><span>Подробнее</span>
+										<svg class="svg-arrow-right">
+											<use href="./img/spriteSvg.svg#svg-arrow-right"></use>
+										</svg>
+									</div></a>
+							</div>
+							<div class="swiper-slide">
+								<!-- program-card--><a class="program-card" href="program.html">
+									<h3 class="program-card__title">Название направления</h3>
+									<p class="program-card__text">We provide constant monitoring and repairing services to make your site active 24/7.</p>
+									<div class="program-card__link"><span>Подробнее</span>
+										<svg class="svg-arrow-right">
+											<use href="./img/spriteSvg.svg#svg-arrow-right"></use>
+										</svg>
+									</div></a>
+								<!-- program-card--><a class="program-card" href="program.html">
+									<h3 class="program-card__title">Название направления</h3>
+									<p class="program-card__text">We provide constant monitoring and repairing services to make your site active 24/7.</p>
+									<div class="program-card__link"><span>Подробнее</span>
+										<svg class="svg-arrow-right">
+											<use href="./img/spriteSvg.svg#svg-arrow-right"></use>
+										</svg>
+									</div></a>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div><a class="btn-icon-mob" href="all-programs.html">Все программы<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff"/>
+</svg></a>
+					<div class="pagination-wrapper"> 
+						<div class="pagination__divider"> </div>
+						<div class="pagination"> <a class="pagination__link pagination-prev" href="#!">
+								<svg class="svg-prev">
+									<use href="./img/spriteSvg.svg#svg-prev"></use>
+								</svg></a>
+							<div class="pagination__link-active">1</div><a class="pagination__link" href="#!">2</a>
+							<div class="pagination__ellipsis">... </div><a class="pagination__link" href="#!">8</a><a class="pagination__link pagination-next" href="#!">
+								<svg class="svg-next">
+									<use href="./img/spriteSvg.svg#svg-next"></use>
+								</svg></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="cta">
+				<div class="container"> 
+					<div class="cta-content"> 
+						<div class="cta__title"> 
+							<h2 class="section-title">Внести вклад в защиту<span> бизнеса</span></h2>
+						</div>
+						<div class="cta__text">
+							<p>Вы можете поддержать деятельность экспертов pro bono, которые уже не первый год помогают десяткам, сотням предпринимателей, оказавшимся в сложной ситуации. Организация этого процесса требует затрат, поэтому Ваш вклад сегодня – это возможность завтра в случае сложной ситуации обратиться к экспертам. Вы также можете стать членом клуба, который открывает доступ к эффективным бизнес-коммуникациям, регулярным мероприятиям, позволяющим которые дают полную юридическую поддержку на стадии, когда у бизнеса возникают сложности! У нас собрана самая эффективная команда экспертов: базовый пакет членства в клубе составляет всего 50 000 руб ежемесячно.</p>
+						</div>
+						<button class="btn-icon-support" type="button" data-modal-button="modal-service">Поддержать
+							<svg class="svg-arrow-right"> 
+								<use href="./img/spriteSvg.svg#svg-arrow-right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="fade-block hidden" data-modal id="modal-service">
+					<div class="modal-window">
+						<div class="payment-form"> 
+							<div class="payment-form-title"> 
+								<p>As the leading agency for white label web design services, we have mastered the art of working with </p>
+							</div>
+							<form class="form-payment" action="mail.php">
+								<div class="form-item">
+									<input class="form-input" type="text" name="sum" placeholder="Cумма">
+								</div>
+								<div class="form-item">
+									<input class="form-input form-input-card" type="text" name="tel" placeholder="Номер карты">
+								</div>
+								<div class="form-item form-item--row">
+									<input class="form-input form-input-date" type="text" name="date" placeholder="ММ/ГГ">
+									<input class="form-input form-input-code" type="text" name="code" placeholder="CVV">
+								</div>
+								<div class="form-item">
+									<input class="form-input" type="text" name="email" placeholder="Электронная почта">
+								</div>
+								<div class="form-item">
+									<button class="btn btn-payment" type="submit">Оплатить 100 Р</button>
+								</div>
+							</form>
+							<button class="close-btn" id="btn-close-payment" data-modal-close>
+								<svg class="svg-close"> 
+									<use href="./img/spriteSvg.svg#svg-close"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services">
+				<div class="container"> 
+					<div class="title-group">
+						<p class="back-title">Наша компетенция</p>
+						<h2 class="section-title">Сервисы</h2>
+					</div>
+					<div class="title-group-mob">
+						<p class="back-title">Компетенция</p>
+						<h2 class="section-title">Сервисы</h2>
+					</div>
+					<div class="services-content"> 
+						<label class="form-group-title">Для кого</label>
+						<div class="form-wrapper">
+							<div class="form-group">
+								<div class="dropdown">
+									<button class="dropdown__button"> <span>Не выбран</span></button>
+									<ul class="dropdown__list">
+										<li class="dropdown__list-item" data-value="item1">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item2">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item3">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item4">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item5">Аналитика</li>
+									</ul>
+									<input class="dropdown__input-hidden" type="text" name="selet-category" value="">
+								</div>
+							</div>
+							<!-- services - slider-->
+							<div class="swiper services-slider">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="service-card-wrapper"><a class="service-card" href="service-inner.html">White label web development</a><a class="service-card" href="service-inner.html">White label website maintenance</a><a class="service-card" href="service-inner.html">White label web development</a><a class="service-card" href="service-inner.html">White label eCommerce development</a>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="service-card-wrapper"><a class="service-card" href="service-inner.html">White label SEO service</a><a class="service-card" href="service-inner.html">White label web development</a><a class="service-card" href="service-inner.html">White label website maintenance</a><a class="service-card" href="service-inner.html">White label eCommerce development</a>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="service-card-wrapper"><a class="service-card" href="service-inner.html">White label SEO service</a><a class="service-card" href="service-inner.html">White label web development</a><a class="service-card" href="service-inner.html">White label website maintenance</a><a class="service-card" href="service-inner.html">White label eCommerce development</a>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div><a class="btn-icon-mob" href="#!">Все сервисы<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff"/>
+</svg></a>
+					</div>
+				</div>
+			</section>
+			<section class="articles">
+				<div class="container"> 
+					<div class="title-group">
+						<p class="back-title">Научная литература</p>
+						<h2 class="section-title">Статьи</h2>
+					</div>
+					<div class="title-group-mob">
+						<p class="back-title">Литература</p>
+						<h2 class="section-title">Статьи</h2>
+					</div>
+					<div class="articles-list-top">
+						<div></div>
+						<button class="btn-show-filters" type="button" data-modal-button="modal-filters"> <span>Фильтры</span><img src="./img/icons/filter.svg" alt="Фильтры"></button>
+					</div>
+					<div class="articles-content"> 
+						<form class="articles-form custom-form js-form">
+							<label class="form-group-title">Cтатус</label>
+							<div class="form-group">
+								<div class="dropdown">
+									<button class="dropdown__button js-btn" type="button"> <span>Не выбран</span></button>
+									<ul class="dropdown__list">
+										<li class="dropdown__list-item" data-value="item1">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item2">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item3">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item4">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item5">Аналитика</li>
+									</ul>
+									<input class="dropdown__input-hidden" type="text" name="selet-category" value="">
+								</div>
+							</div>
+							<label class="form-group-title">Отрасль науки</label>
+							<div class="form-group">
+								<div class="dropdown">
+									<button class="dropdown__button js-btn" type="button"> <span>Не выбран</span></button>
+									<ul class="dropdown__list"> 
+										<li class="dropdown__list-item" data-value="item1">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item2">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item3">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item4">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item5">Аналитика</li>
+									</ul>
+									<input class="dropdown__input-hidden" type="text" name="selet-category" value="">
+								</div>
+							</div>
+							<label class="form-group-title">Группа специальностей</label>
+							<div class="form-group">
+								<div class="dropdown">
+									<button class="dropdown__button js-btn" type="button"> <span>Не выбран</span></button>
+									<ul class="dropdown__list">
+										<li class="dropdown__list-item" data-value="item1">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item2">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item3">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item4">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item5">Аналитика</li>
+									</ul>
+									<input class="dropdown__input-hidden" type="text" name="selet-category" value="">
+								</div>
+							</div>
+							<label class="form-group-title">Фильтр</label>
+							<div class="form-group form-group--articles">
+								<div class="dropdown">
+									<button class="dropdown__button js-btn" type="button"> <span>Не выбран</span></button>
+									<ul class="dropdown__list">
+										<li class="dropdown__list-item" data-value="item1">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item2">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item3">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item4">Аналитика</li>
+										<li class="dropdown__list-item" data-value="item5">Аналитика</li>
+									</ul>
+									<input class="dropdown__input-hidden" type="text" name="selet-category" value="">
+								</div>
+							</div>
+							<div class="form-group form-group--articles"> 
+								<label>
+									<input class="real-checkbox" type="checkbox" name="filter1"><span class="custom-checkbox"> </span><span class="checkbox-text">Фильтр</span>
+								</label>
+							</div>
+							<div class="form-group form-group--articles"> 
+								<label>
+									<input class="real-checkbox" type="checkbox" name="filter2"><span class="custom-checkbox"> </span><span class="checkbox-text">Фильтр</span>
+								</label>
+							</div>
+							<button class="btn btn--reset js-reset" type="reset">Cбросить фильтры  </button>
+						</form>
+						<div class="articles-list js-group">
+							<!-- article--><a class="article-card" href="article-inner.html"> 
+								<h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
+								<div class="article-card-labels"> 
+									<div class="article-card__label">Paбота в ИТ</div>
+								</div></a>
+							<!-- article--><a class="article-card" href="article-inner.html"> 
+								<h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
+								<div class="article-card-labels"> 
+									<div class="article-card__label">Paбота в ИТ</div>
+								</div></a>
+							<!-- article--><a class="article-card" href="article-inner.html"> 
+								<h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
+								<div class="article-card-labels"> 
+									<div class="article-card__label">Paбота в ИТ</div>
+								</div></a>
+							<!-- article--><a class="article-card" href="article-inner.html"> 
+								<h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
+								<div class="article-card-labels"> 
+									<div class="article-card__label">Paбота в ИТ</div>
+								</div></a>
+							<!-- article--><a class="article-card" href="article-inner.html"> 
+								<h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
+								<div class="article-card-labels"> 
+									<div class="article-card__label">Paбота в ИТ</div>
+								</div></a>
+							<!-- article--><a class="article-card" href="article-inner.html"> 
+								<h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
+								<div class="article-card-labels"> 
+									<div class="article-card__label">Paбота в ИТ</div>
+								</div></a>
+							<!-- article--><a class="article-card" href="article-inner.html"> 
+								<h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
+								<div class="article-card-labels"> 
+									<div class="article-card__label">Paбота в ИТ</div>
+								</div></a>
+							<!-- article--><a class="article-card" href="article-inner.html"> 
+								<h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
+								<div class="article-card-labels"> 
+									<div class="article-card__label">Paбота в ИТ</div>
+								</div></a>
+							<!--hidden block-->
+							<div class="article-cards-hide js-btn-target"> 
+								<!-- article--><a class="article-card" href="article-inner.html"> 
+									<h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
+									<div class="article-card-labels"> 
+										<div class="article-card__label">Paбота в ИТ</div>
+									</div></a>
+								<!-- article--><a class="article-card" href="article-inner.html"> 
+									<h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
+									<div class="article-card-labels"> 
+										<div class="article-card__label">Paбота в ИТ</div>
+									</div></a>
+								<!-- article--><a class="article-card" href="article-inner.html"> 
+									<h4 class="article-card__title">Stephanos. Рецензируемый мультиязычный научный журнал</h4>
+									<div class="article-card-labels"> 
+										<div class="article-card__label">Paбота в ИТ</div>
+									</div></a>
+							</div>
+							<button class="btn-show-more js-btn-show" type="button">Показать еще</button>
+						</div>
+					</div><a class="btn-icon-mob" href="#!">Все статьи<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff"/>
+</svg></a>
+				</div>
+				<!--modal-->
+				<div class="fade-block hidden" data-modal id="modal-filters">
+					<div class="modal-window">
+						<div class="filters-mob">
+							<div class="filters-mob-top"> 
+								<div class="filters-mob__title">Фильтры</div>
+								<button class="close-btn" id="btn-close-filters" data-modal-close>
+									<svg class="svg-close"> 
+										<use href="./img/spriteSvg.svg#svg-close"></use>
+									</svg>
+								</button>
+							</div>
+							<form class="articles-form custom-form-mob js-form">
+								<label class="form-group-title">Cтатус</label>
+								<div class="form-group">
+									<div class="dropdown">
+										<button class="dropdown__button js-btn" type="button" id="dropdown-btn-mob"> <span>Не выбран</span></button>
+										<ul class="dropdown__list">
+											<li class="dropdown__list-item" data-value="item1">Аналитика</li>
+											<li class="dropdown__list-item" data-value="item2">Аналитика</li>
+											<li class="dropdown__list-item" data-value="item3">Аналитика</li>
+											<li class="dropdown__list-item" data-value="item4">Аналитика</li>
+											<li class="dropdown__list-item" data-value="item5">Аналитика</li>
+										</ul>
+										<input class="dropdown__input-hidden" type="text" name="selet-category" value="">
+									</div>
+								</div>
+								<label class="form-group-title">Отрасль науки</label>
+								<div class="form-group">
+									<div class="dropdown">
+										<button class="dropdown__button js-btn" type="button"> <span>Не выбран</span></button>
+										<ul class="dropdown__list"> 
+											<li class="dropdown__list-item" data-value="item1">Аналитика</li>
+											<li class="dropdown__list-item" data-value="item2">Аналитика</li>
+											<li class="dropdown__list-item" data-value="item3">Аналитика</li>
+											<li class="dropdown__list-item" data-value="item4">Аналитика</li>
+											<li class="dropdown__list-item" data-value="item5">Аналитика</li>
+										</ul>
+										<input class="dropdown__input-hidden" type="text" name="selet-category" value="">
+									</div>
+								</div>
+								<label class="form-group-title">Группа специальностей</label>
+								<div class="form-group">
+									<div class="dropdown">
+										<button class="dropdown__button js-btn" type="button"> <span>Не выбран</span></button>
+										<ul class="dropdown__list">
+											<li class="dropdown__list-item" data-value="item1">Аналитика</li>
+											<li class="dropdown__list-item" data-value="item2">Аналитика</li>
+											<li class="dropdown__list-item" data-value="item3">Аналитика</li>
+											<li class="dropdown__list-item" data-value="item4">Аналитика</li>
+											<li class="dropdown__list-item" data-value="item5">Аналитика</li>
+										</ul>
+										<input class="dropdown__input-hidden" type="text" name="selet-category" value="">
+									</div>
+								</div>
+								<label class="form-group-title">Фильтр</label>
+								<div class="form-group">
+									<div class="dropdown">
+										<button class="dropdown__button js-btn" type="button"> <span>Не выбран</span></button>
+										<ul class="dropdown__list">
+											<li class="dropdown__list-item" data-value="item1">Аналитика</li>
+											<li class="dropdown__list-item" data-value="item2">Аналитика</li>
+											<li class="dropdown__list-item" data-value="item3">Аналитика</li>
+											<li class="dropdown__list-item" data-value="item4">Аналитика</li>
+											<li class="dropdown__list-item" data-value="item5">Аналитика</li>
+										</ul>
+										<input class="dropdown__input-hidden" type="text" name="selet-category" value="">
+									</div>
+								</div>
+								<div class="form-group"> 
+									<label>
+										<input class="real-checkbox" type="checkbox" name="filter1"><span class="custom-checkbox"> </span><span class="checkbox-text">Фильтр</span>
+									</label>
+								</div>
+								<div class="form-group"> 
+									<label>
+										<input class="real-checkbox" type="checkbox" name="filter2"><span class="custom-checkbox"> </span><span class="checkbox-text">Фильтр</span>
+									</label>
+								</div>
+								<button class="btn">Применить</button>
+								<button class="btn-reset-mob js-reset" type="reset">Cбросить фильтр  </button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="board">
+				<div class="container"> 
+					<div class="title-group">
+						<p class="back-title">Эксперты</p>
+						<h2 class="section-title">Координационный совет</h2><a class="btn-icon" href="team-inner.html">Все члены совета<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff"/>
+</svg></a>
+					</div>
+					<!-- persons - slider -->
+					<div class="swiper persons-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<!-- person - card--><a class="person-card" href="person.html">
+									<div class="person-card__img"></div>
+									<div class="person-card-row"> 
+										<div class="person-card__label">Работа в ИТ</div>
+									</div>
+									<h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
+									<p class="person-card__position">Руководитель практики решение вопросов</p></a>
+							</div>
+							<div class="swiper-slide">
+								<!-- person - card--><a class="person-card" href="person.html">
+									<div class="person-card__img"></div>
+									<div class="person-card-row"> 
+										<div class="person-card__label">Работа в ИТ</div>
+									</div>
+									<h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
+									<p class="person-card__position">Руководитель практики решение вопросов</p></a>
+							</div>
+							<div class="swiper-slide">
+								<!-- person - card--><a class="person-card" href="person.html">
+									<div class="person-card__img"></div>
+									<div class="person-card-row"> 
+										<div class="person-card__label">Работа в ИТ</div>
+									</div>
+									<h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
+									<p class="person-card__position">Руководитель практики решение вопросов</p></a>
+							</div>
+							<div class="swiper-slide">
+								<!-- person - card--><a class="person-card" href="person.html">
+									<div class="person-card__img"></div>
+									<div class="person-card-row"> 
+										<div class="person-card__label">Работа в ИТ</div>
+									</div>
+									<h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
+									<p class="person-card__position">Руководитель практики решение вопросов</p></a>
+							</div>
+							<div class="swiper-slide">
+								<!-- person - card--><a class="person-card" href="person.html">
+									<div class="person-card__img"></div>
+									<div class="person-card-row"> 
+										<div class="person-card__label">Работа в ИТ</div>
+									</div>
+									<h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
+									<p class="person-card__position">Руководитель практики решение вопросов</p></a>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div><a class="btn-icon-mob" href="team-inner.html">Все члены совета<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff"/>
+</svg></a>
+					<div class="pagination-wrapper"> 
+						<div class="pagination__divider"> </div>
+						<div class="pagination"> <a class="pagination__link pagination-prev" href="#!">
+								<svg class="svg-prev">
+									<use href="./img/spriteSvg.svg#svg-prev"></use>
+								</svg></a>
+							<div class="pagination__link-active">1</div><a class="pagination__link" href="#!">2</a>
+							<div class="pagination__ellipsis">... </div><a class="pagination__link" href="#!">8</a><a class="pagination__link pagination-next" href="#!">
+								<svg class="svg-next">
+									<use href="./img/spriteSvg.svg#svg-next"></use>
+								</svg></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="cases">
+				<div class="container container-cases">
+					<div class="title-group">
+						<p class="back-title">Результаты работы</p>
+						<h2 class="section-title">Кейсы</h2><a class="btn-icon" href="cases.html">Все кейсы<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff"/>
+</svg></a>
+					</div>
+					<div class="swiper cases-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<!-- cases - card-->
+								<div class="cases-card">
+									<div class="cases-card__video">
+										<button class="start-video__btn">
+											<svg class="svg-play">
+												<use href="./img/spriteSvg.svg#svg-play"></use>
+											</svg>
+											<svg class="svg-play-border"> 
+												<circle cx="25" cy="25" r="22" fill="transparent"></circle>
+											</svg>
+										</button>
+									</div>
+									<div class="cases-card-desc">
+										<h3 class="cases-card__title">Almost 60% of searches originate from mobile version </h3>
+										<div class="cases-card__text"> 
+											<p>There are com  find which have clauses that claim if you leave in the middle of the estimate you will be charged extra. But that's not the case with us. We don't take any extra charge for our website development. Once the website redesign is ready it's all yours. You have full ownership of the website redesign.There are companies you will find which have clauses that claim if you leave in the middle of the estimate you will be charged extra. But that's not the case with us. We don't take</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<!-- cases - card-->
+								<div class="cases-card">
+									<div class="cases-card__video">
+										<button class="start-video__btn">
+											<svg class="svg-play">
+												<use href="./img/spriteSvg.svg#svg-play"></use>
+											</svg>
+											<svg class="svg-play-border"> 
+												<circle cx="25" cy="25" r="22" fill="transparent"></circle>
+											</svg>
+										</button>
+									</div>
+									<div class="cases-card-desc">
+										<h3 class="cases-card__title">Almost 60% of searches originate from mobile version </h3>
+										<div class="cases-card__text"> 
+											<p>There are com  find which have clauses that claim if you leave in the middle of the estimate you will be charged extra. But that's not the case with us. We don't take any extra charge for our website development. Once the website redesign is ready it's all yours. You have full ownership of the website redesign.There are companies you will find which have clauses that claim if you leave in the middle of the estimate you will be charged extra. But that's not the case with us. We don't take</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<!-- cases - card-->
+								<div class="cases-card">
+									<div class="cases-card__video">
+										<button class="start-video__btn">
+											<svg class="svg-play">
+												<use href="./img/spriteSvg.svg#svg-play"></use>
+											</svg>
+											<svg class="svg-play-border"> 
+												<circle cx="25" cy="25" r="22" fill="transparent"></circle>
+											</svg>
+										</button>
+									</div>
+									<div class="cases-card-desc">
+										<h3 class="cases-card__title">Almost 60% of searches originate from mobile version </h3>
+										<div class="cases-card__text"> 
+											<p>There are com  find which have clauses that claim if you leave in the middle of the estimate you will be charged extra. But that's not the case with us. We don't take any extra charge for our website development. Once the website redesign is ready it's all yours. You have full ownership of the website redesign.There are companies you will find which have clauses that claim if you leave in the middle of the estimate you will be charged extra. But that's not the case with us. We don't take</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="program-slider-group center">
+							<div class="program-slider-controls cases-controls">
+								<button class="program-slider-prev prevXl">
+									<svg class="svg-prev">
+										<use href="./img/spriteSvg.svg#svg-prev"></use>
+									</svg>
+								</button>
+								<button class="program-slider-next nextXl">
+									<svg class="svg-next">
+										<use href="./img/spriteSvg.svg#svg-next"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div><a class="btn-icon-mob" href="cases.html">Все кейсы<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff"/>
+</svg></a>
+				</div>
+			</section>
+			<section class="news">
+				<div class="container"> 
+					<div class="title-group">
+						<p class="back-title">События</p>
+						<h2 class="section-title">Новости</h2><a class="btn-icon" href="all-news.html">Все новости<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff"/>
+</svg></a>
+					</div>
+					<ul class="list-group">
+						<li class="list-group-item active" data-tab="tab-1">Лента</li>
+						<li class="list-group-item" data-tab="tab-2">Новости</li>
+						<li class="list-group-item" data-tab="tab-3">СМИ</li>
+						<li class="list-group-item" data-tab="tab-4">Мероприятия</li>
+						<li class="list-group-item" data-tab="tab-5">Видео</li>
+					</ul>
+					<div class="card" data-tab-content id="tab-1">
+						<div class="swiper news-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<!-- article - card--><a class="news-card" href="article-inner.html">
+										<div class="news-card__img"> </div>
+										<h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
+										<p class="news-card__info">28.09.2023 /<span> Обучение /</span><span> Обучение</span></p></a>
+								</div>
+								<div class="swiper-slide">
+									<!-- article - card--><a class="news-card" href="article-inner.html">
+										<div class="news-card__img"> </div>
+										<h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
+										<p class="news-card__info">28.09.2023 /<span> Обучение /</span><span> Обучение</span></p></a>
+								</div>
+								<div class="swiper-slide">
+									<!-- article - card--><a class="news-card" href="article-inner.html">
+										<div class="news-card__img"> </div>
+										<h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever Lorem Ipsum has been the industry's standard dummy text ever</h4>
+										<p class="news-card__info">28.09.2023 /<span> Обучение /</span><span> Обучение</span></p></a>
+								</div>
+								<div class="swiper-slide">
+									<!-- article - card--><a class="news-card" href="article-inner.html">
+										<div class="news-card__img"> </div>
+										<h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
+										<p class="news-card__info">28.09.2023 /<span> Обучение /</span><span> Обучение</span></p></a>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div><a class="btn-icon-mob" href="all-news.html">Все новости<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff"/>
+</svg></a>
+						<div class="pagination-wrapper"> 
+							<div class="pagination__divider"> </div>
+							<div class="pagination"> <a class="pagination__link pagination-prev" href="#!">
+									<svg class="svg-prev">
+										<use href="./img/spriteSvg.svg#svg-prev"></use>
+									</svg></a>
+								<div class="pagination__link-active">1</div><a class="pagination__link" href="#!">2</a>
+								<div class="pagination__ellipsis">... </div><a class="pagination__link" href="#!">8</a><a class="pagination__link pagination-next" href="#!">
+									<svg class="svg-next">
+										<use href="./img/spriteSvg.svg#svg-next"></use>
+									</svg></a>
+							</div>
+						</div>
+					</div>
+					<div class="card hidden" data-tab-content id="tab-2">
+						<!-- article - card--><a class="news-card" href="article-inner.html">
+							<div class="news-card__img"> </div>
+							<h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
+							<p class="news-card__info">28.09.2023 /<span> Обучение /</span><span> Обучение</span></p></a>
+					</div>
+					<div class="card hidden" data-tab-content id="tab-3">
+						<!-- article - card--><a class="news-card" href="article-inner.html">
+							<div class="news-card__img"> </div>
+							<h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
+							<p class="news-card__info">28.09.2023 /<span> Обучение /</span><span> Обучение</span></p></a>
+					</div>
+					<div class="card hidden" data-tab-content id="tab-4">
+						<!-- article - card--><a class="news-card" href="article-inner.html">
+							<div class="news-card__img"> </div>
+							<h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
+							<p class="news-card__info">28.09.2023 /<span> Обучение /</span><span> Обучение</span></p></a>
+					</div>
+					<div class="card hidden" data-tab-content id="tab-5">
+						<!-- article - card--><a class="news-card" href="article-inner.html">
+							<div class="news-card__img"> </div>
+							<h4 class="news-card__title">Lorem Ipsum has been the industry's standard dummy text ever</h4>
+							<p class="news-card__info">28.09.2023 /<span> Обучение /</span><span> Обучение</span></p></a>
+					</div>
+				</div>
+			</section>
+			<section class="team">
+				<div class="container"> 
+					<div class="title-group">
+						<p class="back-title">Профессионалы</p>
+						<h2 class="section-title">Команда</h2><a class="btn-icon" href="team-inner.html">Вся команда<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff"/>
+</svg></a>
+					</div>
+					<!-- persons - slider -->
+					<div class="swiper persons-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<!-- person - card--><a class="person-card" href="person.html">
+									<div class="person-card__img"></div>
+									<div class="person-card-row"> 
+										<div class="person-card__label">Работа в ИТ</div>
+									</div>
+									<h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
+									<p class="person-card__position">Руководитель практики решение вопросов</p></a>
+							</div>
+							<div class="swiper-slide">
+								<!-- person - card--><a class="person-card" href="person.html">
+									<div class="person-card__img"></div>
+									<div class="person-card-row"> 
+										<div class="person-card__label">Работа в ИТ</div>
+									</div>
+									<h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
+									<p class="person-card__position">Руководитель практики решение вопросов</p></a>
+							</div>
+							<div class="swiper-slide">
+								<!-- person - card--><a class="person-card" href="person.html">
+									<div class="person-card__img"></div>
+									<div class="person-card-row"> 
+										<div class="person-card__label">Работа в ИТ</div>
+									</div>
+									<h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
+									<p class="person-card__position">Руководитель практики решение вопросов</p></a>
+							</div>
+							<div class="swiper-slide">
+								<!-- person - card--><a class="person-card" href="person.html">
+									<div class="person-card__img"></div>
+									<div class="person-card-row"> 
+										<div class="person-card__label">Работа в ИТ</div>
+									</div>
+									<h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
+									<p class="person-card__position">Руководитель практики решение вопросов</p></a>
+							</div>
+							<div class="swiper-slide">
+								<!-- person - card--><a class="person-card" href="person.html">
+									<div class="person-card__img"></div>
+									<div class="person-card-row"> 
+										<div class="person-card__label">Работа в ИТ</div>
+									</div>
+									<h4 class="person-card__name">Белоусов Владимир Онисимович</h4>
+									<p class="person-card__position">Руководитель практики решение вопросов</p></a>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div><a class="btn-icon-mob" href="team-inner.html">Вся команда<svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.73815 0.230252C6.89052 0.0828217 7.09715 0 7.3126 0C7.52805 0 7.73467 0.0828217 7.88704 0.230252L12.7621 4.94875C12.9144 5.09623 13 5.29622 13 5.50475C13 5.71328 12.9144 5.91327 12.7621 6.06074L7.88704 10.7792C7.7338 10.9225 7.52856 11.0018 7.31552 11C7.10248 10.9982 6.8987 10.9155 6.74805 10.7697C6.5974 10.6239 6.51195 10.4266 6.5101 10.2204C6.50825 10.0142 6.59015 9.81557 6.73815 9.66725L10.2263 6.29116H0.812511C0.59702 6.29116 0.390354 6.20831 0.237979 6.06083C0.0856035 5.91335 0 5.71332 0 5.50475C0 5.29618 0.0856035 5.09615 0.237979 4.94867C0.390354 4.80119 0.59702 4.71833 0.812511 4.71833H10.2263L6.73815 1.34224C6.58583 1.19477 6.50026 0.994778 6.50026 0.786248C6.50026 0.577719 6.58583 0.377727 6.73815 0.230252Z" fill="#fff"/>
+</svg></a>
+					<div class="pagination-wrapper"> 
+						<div class="pagination__divider"> </div>
+						<div class="pagination"> <a class="pagination__link pagination-prev" href="#!">
+								<svg class="svg-prev">
+									<use href="./img/spriteSvg.svg#svg-prev"></use>
+								</svg></a>
+							<div class="pagination__link-active">1</div><a class="pagination__link" href="#!">2</a>
+							<div class="pagination__ellipsis">... </div><a class="pagination__link" href="#!">8</a><a class="pagination__link pagination-next" href="#!">
+								<svg class="svg-next">
+									<use href="./img/spriteSvg.svg#svg-next"></use>
+								</svg></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="partners">
+				<div class="container"> 
+					<div class="title-group">
+						<p class="back-title">С кем мы работаем</p>
+						<h2 class="section-title">Партнеры</h2>
+					</div>
+					<!-- partners - slider-->
+					<div class="swiper partners-slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="./img/partners/01.webp" alt="logo"></div>
+							<div class="swiper-slide"><img src="./img/partners/02.webp" alt="logo"></div>
+							<div class="swiper-slide"><img src="./img/partners/03.webp" alt="logo"></div>
+							<div class="swiper-slide"><img src="./img/partners/04.webp" alt="logo"></div>
+							<div class="swiper-slide"><img src="./img/partners/05.webp" alt="logo"></div>
+							<div class="swiper-slide"><img src="./img/partners/01.webp" alt="logo"></div>
+							<div class="swiper-slide"><img src="./img/partners/02.webp" alt="logo"></div>
+							<div class="swiper-slide"><img src="./img/partners/03.webp" alt="logo"></div>
+							<div class="swiper-slide"><img src="./img/partners/04.webp" alt="logo"></div>
+							<div class="swiper-slide"><img src="./img/partners/05.webp" alt="logo"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container"> 
+				<div class="footer__logo"> 
+					<p>Центр защиты бизнеса</p>
+				</div>
+				<div class="footer-content"> 
+					<div class="footer__contacts"><a class="footer__contacts-tel" href="tel:89994442211">+7 (999) 444 22 11</a><a class="footer__contacts-mail" href="mailto:mail@mail.ru">mail@mail.ru</a>
+						<div class="footer__contacts-copyright">
+							<p>&copy; АНО Центр защиты бизнеса 2023</p>
+						</div>
+					</div>
+					<div class="footer__social">
+						<div class="footer__social-text">
+							<p>Следите за нашими соц сетями:</p>
+						</div>
+						<!-- social-icons-->
+						<div class="social-icons-fill"><a class="social-icons-fill-item" href="#!">
+								<svg class="svg-tg-fill"> 
+									<use href="./img/spriteSvg.svg#svg-tg-fill"></use>
+								</svg></a><a class="social-icons-fill-item" href="#!">
+								<svg class="svg-vk-fill"> 
+									<use href="./img/spriteSvg.svg#svg-vk-fill"></use>
+								</svg></a><a class="social-icons-fill-item" href="#!">
+								<svg class="svg-ok-fill"> 
+									<use href="./img/spriteSvg.svg#svg-ok-fill"></use>
+								</svg></a><a class="social-icons-fill-item" href="#!">
+								<svg class="svg-youtube-fill"> 
+									<use href="./img/spriteSvg.svg#svg-youtube-fill"></use>
+								</svg></a></div>
+					</div>
+					<div class="footer__widgets"> 
+						<ul class="footer-widget">
+							<li> <a class="footer-widgets__link" href="all-programs.html">Программы</a></li>
+							<li><a class="footer-widgets__link" href="services-page.html">Сервисы</a></li>
+							<li><a class="footer-widgets__link" href="articles.html">Cтатьи</a></li>
+						</ul>
+						<ul class="footer-widget">
+							<li><a class="footer-widgets__link" href="about-us.html">СМИ о нас   </a></li>
+							<li><a class="footer-widgets__link" href="all-news.html">Новости</a></li>
+							<li><a class="footer-widgets__link" href="cases.html">Кейсы</a></li>
+						</ul>
+						<ul class="footer-widget">
+							<li><a class="footer-widgets__link" href="#!">Партнеры</a></li>
+							<li><a class="footer-widgets__link" href="team-inner.html">Команда</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__contacts-copyright-mob">
+					<p>&copy; АНО Центр защиты бизнеса 2023</p>
+				</div>
+			</div>
+		</footer>
+		<script src="libs/swiper.js"></script>
+		<script src="libs/swiper-bundle.min.js.map"></script>
+		<script src="js/toggleMenu.js"></script>
+		<script src="js/tabs.js"></script>
+		<script src="js/select.js"></script>
+		<script src="js/SwiperAdder.js"></script>
+		<script src="js/modal.js"></script>
+		<script src="js/expand.js"></script>
+		<script src="js/accordeon.js"></script>
+		<script src="js/filter.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
